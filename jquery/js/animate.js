@@ -10,4 +10,15 @@ $(function(){
   $('ul').on('click', 'li', function(){
     $(this).animate({backgroundColor:'#ccc', color:'#ff0000'}, 1000);
   })
+
+  $('.box1').animate({height:'500px'},1000, function(){
+    $(this).animate({height:'200px'}, 500)
+  })
+
+  $('.box2').mouseover(function(){
+    //stop() --> 이전에 했던것을 무조건 멈추고 다음 함수를 실행
+    $(this).stop(true).animate({backgroundColor:'#001235'}, 500);
+  }).mouseout(function(){
+    $(this).stop(true).animate({backgroundColor:'#945245'}, 500)
+  })
 });

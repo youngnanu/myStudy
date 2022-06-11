@@ -4,5 +4,7 @@
   background-color: #3498db;
   font-size: 110px;
   color: #fff;
-  height: 500px;
+  height: 300px;
 }
+.box1 { width:200px; height: 200px; background-color: #f0c0f4; display: inline-block;}
+.box2 { width:200px; height: 200px; background-color: #945245; display: inline-block;}
