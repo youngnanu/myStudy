@@ -16,7 +16,7 @@ $(function(){
   })
 
   $('.box2').mouseover(function(){
-    //stop() --> 이전에 했던것을 무조건 멈추고 다음 함수를 실행
+    //stop() --> 이전에 했던것을 무조건 멈추고 다음 함수를 실행  styp(true)가 기본이기때문에 true생략가능
     $(this).stop(true).animate({backgroundColor:'#001235'}, 500);
   }).mouseout(function(){
     $(this).stop(true).animate({backgroundColor:'#945245'}, 500)
