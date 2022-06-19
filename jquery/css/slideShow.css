@@ -1,0 +1,26 @@
+/*
+ * Base
+ */
+ html {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  background-color: #656565;
+}
+
+.slideshow {
+  overflow: hidden;
+  position: relative;
+  min-width: 960px;
+  height: 465px;
+}
+
+.slideshow img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  margin-left: -800px;
+}
