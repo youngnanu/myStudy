@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<meta name="theme-color" content="#333333">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	<link href="../../font/Pretendard-Bold.woff2" as="font" type="font/woff" crossorigin="anonymous" rel="preload">
+	<link href="../../font/Pretendard-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous" rel="preload">
+
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+	<link href="../guide/shCore.css" rel="stylesheet">
+	<script src="../guide/shCore.js"></script>
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<nav class="lnb" id="lnb">
+		<div class="inr">
+			<button type="button" class="btn-ui"><b>Board</b></button>
+			<nav class="uimenu">
+				<div class="menu">
+					<ul class="list"></ul>
+				</div>
+			</nav>
+		</div>
+	</nav>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page ui" id="container">
+
+		<div class="contents" id="contents">
+			<div class="page-hdt blind">
+				<h2 class="stit hd-tit2">Board</h2>
+			</div>
+			<div class="uisect">
+
+				<section class="sect page notice list" data-sid="ui-bd01">
+					<h3 class="hdt">목록 : 기본</h3>
+
+					<div class="board-wrp">
+
+						<div class="ut-optset optset">
+							<div class="opt pl">
+								<span class="tot">총 <i class="n">100</i>개</span>
+							</div>
+							<div class="opt pr">
+								<span class="input ipsch">
+									<input type="search" placeholder="검색어를 입력해 주세요." title="검색어 입력" value="">
+									<span class="ibts"><button type="button" class="btn-sch">검색</button></span>
+								</span>
+							</div>
+						</div><!-- //ut-optset -->
+		
+						<ul class="notice-lst">
+							<li class="fix"> <!-- 고정 -->
+								<button type="button" class="item">
+									<span class="box">
+										<span class="cont">
+											<strong class="tit">메크로 어드벤처 2021 앨리스와 신비한 서점 메크로 어드벤처 2021 앨리스와 신비한 서점 메크로 어드벤처 2021 앨리스와 신비한 서점 메크로 어드벤처 2021 앨리스와 신비한 서점 메크로 어드벤처 2021 앨리스와 신비한 서점 메크로 어드벤처 2021 앨리스와 신비한 서점 메크로 어드벤처 2021 앨리스와 신비한 서점 메크로 어드벤처 2021 앨리스와 신비한 서점<i class="new"><em class="blind">새글</em></i></strong>
+										</span>
+										<span class="etc">
+											<em class="date">2022.01.01</em>
+										</span>
+									</span>
+								</button>
+							</li>
+							<li class="fix"> <!-- 고정 -->
+								<button type="button" class="item">
+									<span class="box">
+										<span class="cont">
+											<strong class="tit">교보생명 홈페이지 웹접근성 점검 및 인증마크 갱신 수행업체 선정(공고)</strong>
+										</span>
+										<span class="etc">
+											<em class="date">2022.01.01</em>
+										</span>
+									</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="item">
+									<span class="box">
+										<span class="cont">
+											<strong class="tit">교보생명 홈페이지 웹접근성 점검 및 인증마크 갱신 수행업체 선정(공고)</strong>
+										</span>
+										<span class="etc">
+											<em class="date">2022.01.01</em>
+										</span>
+									</span>
+								</button>
+							</li>
+						</ul><!-- //notice-lst -->
+		
+						<div class="ut-paging">
+							<div class="nav prev">
+								<a href="javascript:;" role="button" class="bt prev end"><i class="blind">처음 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt prev"><i class="blind">이전 페이지</i></a>
+							</div>
+							<div class="link">
+								<a href="javascript:;" role="button" class="bt"><i class="n">1</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">2</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">3</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt active"><i class="n">4</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">5</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">6</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">7</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">8</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">9</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">10</i> <i class="blind">번째 페이지</i></a>
+							</div>
+							<div class="nav next">
+								<a href="javascript:;" role="button" class="bt next"><i class="blind">다음 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt next end"><i class="blind">마지막 페이지</i></a>
+							</div>
+						</div><!-- //ut-paging -->
+		
+						<ul class="notice-lst">
+							<li>
+								<div class="list-empty">
+									<p>검색 결과가 없습니다.</p>
+								</div>
+							</li>
+						</ul><!-- //검색결과 없는 경우 -->
+		
+					</div><!-- //board-wrp -->
+
+				</section>
+
+				<section class="sect page event list" data-sid="ui-bd02">
+					<h3 class="hdt">목록 : 옵션 (날짜, 조회수)</h3>
+
+					<div class="board-wrp">
+
+						<div class="ut-optset optset">
+							<div class="opt pl">
+								<span class="tot">총 <i class="n">100</i>개</span>
+							</div>
+							<div class="opt pr">
+								<span class="input ipsch no-lb">
+									<input type="search" placeholder="이름 또는 아이디 입력" title="이름 또는 아이디 입력" value="">
+									<span class="ibts"><button type="button" class="btn-sch">검색</button></span>
+								</span>
+							</div>
+						</div><!-- //ut-optset -->
+		
+						<ul class="notice-lst">
+							<li>
+								<button type="button" class="item">
+									<span class="box">
+										<span class="cont">
+											<span class="add">
+												<em class="t">2020.01.01</em>
+												<em class="t">조회수 100</em>
+											</span>
+											<strong class="tit">메크로 어드벤처 2021 앨리스와 신비한 서점메크로 어드벤처 2021 앨리스와 신비한 서점메크로 어드벤처 2021 앨리스와 신비한 서점메크로 어드벤처 2021 앨리스와 신비한 서점메크로 어드벤처 2021 앨리스와 신비한 서점메크로 어드벤처 2021 앨리스와 신비한 서점메크로 어드벤처 2021 앨리스와 신비한 서점메크로 어드벤처 2021 앨리스와 신비한 서점메크로 어드벤처 2021 앨리스와 신비한 서점</strong>
+										</span>
+									</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="item">
+									<span class="box">
+										<span class="cont">
+											<span class="add">
+												<em class="t">2020.01.01</em>
+												<em class="t">조회수 100</em>
+											</span>
+											<strong class="tit">메크로 어드벤처 2021 앨리스와 신비한 서점</strong>
+										</span>
+									</span>
+								</button>
+							</li>
+						</ul><!-- //notice-lst -->
+		
+						<div class="ut-paging">
+							<div class="nav prev">
+								<a href="javascript:;" role="button" class="bt prev end"><i class="blind">처음 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt prev"><i class="blind">이전 페이지</i></a>
+							</div>
+							<div class="link">
+								<a href="javascript:;" role="button" class="bt"><i class="n">1</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">2</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">3</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt active"><i class="n">4</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">5</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">6</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">7</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">8</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">9</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">10</i> <i class="blind">번째 페이지</i></a>
+							</div>
+							<div class="nav next">
+								<a href="javascript:;" role="button" class="bt next"><i class="blind">다음 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt next end"><i class="blind">마지막 페이지</i></a>
+							</div>
+						</div><!-- //ut-paging -->
+	
+						<ul class="notice-lst">
+							<li>
+								<div class="list-empty">
+									<p>아쉬워요 :( <br>당첨된 이벤트가 없어요.</p>
+								</div>
+							</li>
+						</ul><!-- //당첨 결과 없는 경우 -->
+		
+						<p class="evt-txt">참여해주신 고객님께 진심으로 감사드립니다.</p>
+		
+						<div class="btn-set lst">
+							<button type="button" class="btn rd md">목록</button>
+						</div>
+	
+					</div><!-- //board-wrp -->
+
+				</section>
+
+				<section class="sect page csc dict list" data-sid="ui-bd03">
+					<h3 class="hdt">목록 : 용어 (텍스트)</h3>
+
+					<div class="board-wrp">
+
+						<div class="ut-optset optset">
+							<div class="opt pl">
+								<span class="tot">총 <i class="n">100</i>개</span>
+							</div>
+							<div class="opt pr">
+								<span class="input ipsch no-lb">
+									<input type="search" placeholder="이름 또는 아이디 입력" title="이름 또는 아이디 입력" value="">
+									<span class="ibts"><button type="button" class="btn-sch">검색</button></span>
+								</span>
+							</div>
+						</div><!-- //ut-optset -->
+		
+						<ul class="notice-lst">
+							<li>
+								<button type="button" class="item">
+									<span class="box">
+										<span class="cont">
+											<strong class="tit">고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무 고지의무</strong>
+											<span class="txt">個人年金, Individual annuity Individual Individual Individual Individual</span>
+										</span>
+									</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="item">
+									<span class="box">
+										<span class="cont">
+											<strong class="tit">고지의무</strong>
+											<span class="txt">個人年金, Individual annuity Individual Individual Individual Individual</span>
+										</span>
+									</span>
+								</button>
+							</li>
+						</ul><!-- //notice-lst -->
+		
+						<div class="ut-paging">
+							<div class="nav prev">
+								<a href="javascript:;" role="button" class="bt prev end"><i class="blind">처음 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt prev"><i class="blind">이전 페이지</i></a>
+							</div>
+							<div class="link">
+								<a href="javascript:;" role="button" class="bt"><i class="n">1</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">2</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">3</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt active"><i class="n">4</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">5</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">6</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">7</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">8</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">9</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">10</i> <i class="blind">번째 페이지</i></a>
+							</div>
+							<div class="nav next">
+								<a href="javascript:;" role="button" class="bt next"><i class="blind">다음 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt next end"><i class="blind">마지막 페이지</i></a>
+							</div>
+						</div><!-- //ut-paging -->
+	
+						<ul class="notice-lst">
+							<li>
+								<div class="list-empty">
+									<p>검색 결과가 없습니다.</p>
+								</div>
+							</li>
+						</ul>
+	
+					</div><!-- //board-wrp -->
+
+				</section>
+				
+
+				<section class="sect page csc dict list" data-sid="ui-bd04">
+					<h3 class="hdt">목록 : 다운로드 (제목 링크 有)</h3>
+
+					<div class="board-wrp">
+
+						<div class="ut-optset optset">
+							<div class="opt pl">
+								<span class="tot">총 <i class="n">100</i>개</span>
+							</div>
+						</div><!-- //ut-optset -->
+		
+						<ul class="notice-lst">
+							<li>
+								<div class="item">
+									<div class="box">
+										<button class="cont">
+											<strong class="tit">문자 또는 카카오톡 등 메신져를 통해 가족 또는 친구를 사칭하는 보이스피싱에 유의하시기 바랍니다. 문자 또는 카카오톡 등 메신져를 통해 가족 또는 친구를 사칭하는 보이스피싱에 유의하시기 바랍니다. 문자 또는 카카오톡 등 메신져를 통해 가족 또는 친구를 사칭하는 보이스피싱에 유의하시기 바랍니다. 문자 또는 카카오톡 등 메신져를 통해 가족 또는 친구를 사칭하는 보이스피싱에 유의하시기 바랍니다.</strong>
+											<span class="add">
+												<em class="t">2020.01.01</em>
+											</span>
+										</button>
+										<div class="atta_file">
+											<a href="javascript:;" class="btn sm ico-r ico-pdf" title="은퇴기_생애주기별 금융생활 가이드북.pdf">다운로드</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul><!-- //notice-lst -->
+		
+						<div class="ut-paging">
+							<div class="nav prev">
+								<a href="javascript:;" role="button" class="bt prev end"><i class="blind">처음 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt prev"><i class="blind">이전 페이지</i></a>
+							</div>
+							<div class="link">
+								<a href="javascript:;" role="button" class="bt"><i class="n">1</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">2</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">3</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt active"><i class="n">4</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">5</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">6</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">7</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">8</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">9</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">10</i> <i class="blind">번째 페이지</i></a>
+							</div>
+							<div class="nav next">
+								<a href="javascript:;" role="button" class="bt next"><i class="blind">다음 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt next end"><i class="blind">마지막 페이지</i></a>
+							</div>
+						</div><!-- //ut-paging -->
+		
+					</div><!-- //board-wrp -->
+
+				</section>
+
+				<section class="sect page csc dict list" data-sid="ui-bd05">
+					<h3 class="hdt">목록 : 다운로드 (제목 링크 無)</h3>
+
+					<div class="board-wrp">
+
+						<div class="ut-optset optset">
+							<div class="opt pl">
+								<span class="tot">총 <i class="n">100</i>개</span>
+							</div>
+						</div><!-- //ut-optset -->
+		
+						<ul class="notice-lst">
+							<li>
+								<div class="item">
+									<div class="box">
+										<div class="cont">
+											<strong class="tit">2018년 4분기 민원현황</strong>
+											<span class="add">
+												<em class="t">2020.01.01</em>
+											</span>
+										</div>
+										<div class="atta_file">
+											<a href="javascript:;" class="btn sm ico-r ico-pdf" title="2018년 4분기 민원현황 PDf">다운로드</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul><!-- //notice-lst -->
+		
+						<div class="ut-paging">
+							<div class="nav prev">
+								<a href="javascript:;" role="button" class="bt prev end"><i class="blind">처음 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt prev"><i class="blind">이전 페이지</i></a>
+							</div>
+							<div class="link">
+								<a href="javascript:;" role="button" class="bt"><i class="n">1</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">2</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">3</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt active"><i class="n">4</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">5</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">6</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">7</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">8</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">9</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">10</i> <i class="blind">번째 페이지</i></a>
+							</div>
+							<div class="nav next">
+								<a href="javascript:;" role="button" class="bt next"><i class="blind">다음 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt next end"><i class="blind">마지막 페이지</i></a>
+							</div>
+						</div><!-- //ut-paging -->
+		
+					</div><!-- //board-wrp -->
+
+				</section>
+
+				<section class="sect page csc dict list" data-sid="ui-bd06">
+					<h3 class="hdt">목록 : 진행여부</h3>
+
+					<div class="board-wrp">
+
+						<div class="ut-optset optset">
+							<div class="opt pl">
+								<span class="tot">총 <i class="n">100</i>개</span>
+							</div>
+						</div><!-- //ut-optset -->
+		
+						<ul class="notice-lst">
+							<li>
+								<button type="button" class="item">
+									<span class="box">
+										<span class="cont">
+											<span class="add">
+												<div class="ut-bdgs"><em class="bdg a">접수중</em></div>
+												<em class="t">2020.01.01</em>
+											</span>
+											<strong class="tit">정부지원 긴급자금대출 빙자 보이스피싱 주의</strong>
+										</span>
+									</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="item">
+									<span class="box">
+										<span class="cont">
+											<span class="add">
+												<div class="ut-bdgs"><em class="bdg a">접수중</em></div>
+												<em class="t">2020.01.01</em>
+											</span>
+											<strong class="tit">문자 또는 카카오톡 등 메신져를 통해 가족 또는 친구를 사칭하는 보이스피싱에 유의하시기 바랍니다. 문자 또는 카카오톡 등 메신져를 통해 가족 또는 친구를 사칭하는 보이스피싱에 유의하시기 바랍니다. 문자 또는 카카오톡 등 메신져를 통해 가족 또는 친구를 사칭하는 보이스피싱에 유의하시기 바랍니다. 문자 또는 카카오톡 등 메신져를 통해 가족 또는 친구를 사칭하는 보이스피싱에 유의하시기 바랍니다.</strong>
+										</span>
+									</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="item">
+									<span class="box">
+										<span class="cont">
+											<span class="add">
+												<div class="ut-bdgs"><em class="bdg q">처리완료</em></div>
+												<em class="t">2020.01.01</em>
+											</span>
+											<strong class="tit">정부지원 긴급자금대출 빙자 보이스피싱 주의</strong>
+										</span>
+									</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="item">
+									<span class="box">
+										<span class="cont">
+											<span class="add">
+												<div class="ut-bdgs"><em class="bdg q">처리완료</em></div>
+												<em class="t">2020.01.01</em>
+											</span>
+											<strong class="tit">문자 또는 카카오톡 등 메신져를 통해 가족 또는 친구를 사칭하는 보이스피싱에 유의하시기 바랍니다. 문자 또는 카카오톡 등 메신져를 통해 가족 또는 친구를 사칭하는 보이스피싱에 유의하시기 바랍니다.</strong>
+										</span>
+									</span>
+								</button>
+							</li>
+						</ul><!-- //notice-lst -->
+		
+						<div class="ut-paging">
+							<div class="nav prev">
+								<a href="javascript:;" role="button" class="bt prev end"><i class="blind">처음 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt prev"><i class="blind">이전 페이지</i></a>
+							</div>
+							<div class="link">
+								<a href="javascript:;" role="button" class="bt"><i class="n">1</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">2</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">3</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt active"><i class="n">4</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">5</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">6</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">7</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">8</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">9</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">10</i> <i class="blind">번째 페이지</i></a>
+							</div>
+							<div class="nav next">
+								<a href="javascript:;" role="button" class="bt next"><i class="blind">다음 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt next end"><i class="blind">마지막 페이지</i></a>
+							</div>
+						</div><!-- //ut-paging -->
+		
+					</div><!-- //board-wrp -->
+
+				</section>
+
+				<section class="sect page event list" data-sid="ui-bd20">
+					<h3 class="hdt">썸네일 : 기본</h3>
+
+					<div class="board-wrp">
+					
+						<div class="ut-optset optset">
+							<div class="opt pr">
+								<span class="input ipsch">
+									<input type="search" placeholder="이벤트 키워드 또는 제목 입력" title="이벤트 키워드 또는 제목 입력" value="">
+									<span class="ibts"><button type="button" class="btn-sch">검색</button></span>
+								</span>
+							</div>
+						</div><!-- //ut-optset -->
+		
+						<div class="ut-optset optset">
+							<div class="opt pl">
+								<span class="tot">총 <i class="n">5</i>개</span>
+							</div>
+							<div class="opt pr">
+								<span class="select sort"> <!-- .def 클래스 추가하면 기본시스템 select -->
+									<select name="select-4" title="검색정렬 선택">
+										<option selected>시작일순</option>
+										<option>종료일순</option>
+									</select>
+								</span>
+							</div>
+						</div><!-- //ut-optset -->
+		
+						<ul class="item-lst">
+							<li>
+								<button type="button" class="item">
+									<span class="box">
+										<span class="thumb"><img class="img" src="../../img/temp/img_evt@2x.png" alt="OOO 썸네일 이미지"></span>
+										<span class="cont">
+											<span class="tit">메크로 어드벤처 2021</span>
+											<span class="add">
+												<em class="date">2021.11.01 ~ 2020.01.01</em>
+											</span>
+										</span>
+									</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="item">
+									<span class="box">
+										<span class="thumb"><img class="img" src="../../img/temp/img_evt@2x.png" alt="OOO 썸네일 이미지"></span>
+										<span class="cont">
+											<span class="tit">메크로 어드벤처 2021 앨리스와 신비한 서점 메크로 어드벤처 2021 앨리스와 신비한 서점</span>
+											<span class="add">
+												<em class="date">2021.11.01 ~ 2020.01.01</em>
+											</span>
+										</span>
+									</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="item">
+									<span class="box">
+										<span class="thumb"><img class="img" src="../../img/temp/img_evt@2x.png" alt="OOO 썸네일 이미지"></span>
+										<span class="cont">
+											<span class="tit">메크로 어드벤처 2021 앨리스와 신비한 서점</span>
+											<span class="add">
+												<em class="date">2021.11.01 ~ 2020.01.01</em>
+											</span>
+										</span>
+									</span>
+								</button>
+							</li>
+						</ul><!-- //item-lst -->
+		
+						<div class="ut-more">
+							<button type="button" class="btn-more">
+								<span class="tnt">
+									<em class="tm">더보기</em>
+									<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+								</span>
+							</button>
+						</div>
+		
+						<div class="list-empty bd">
+							<p>검색 결과가 없습니다.</p>
+						</div><!-- //검색결과 없는 경우 -->
+		
+						<div class="list-empty bd">
+							<p>응모한 이벤트가 없습니다.</p>
+						</div><!-- //응모한 이벤트 없는 경우 -->
+		
+					</div><!-- //board-wrp -->
+
+				</section>
+
+				<section class="sect page csc qna list" data-sid="ui-bd21">
+					<h3 class="hdt">썸네일 : masonry</h3>
+					<h4 class="hdt"><small>(디자인팀 요청사항 반영)</small></h4>
+
+					<div class="board-wrp">
+				
+						<div class="ut-optset optset">
+							<div class="opt pr">
+								<span class="input ipsch">
+									<input type="search" placeholder="검색어를 입력해 주세요." title="검색어 입력" value="">
+									<span class="ibts"><button type="button" class="btn-sch">검색</button></span>
+								</span>
+							</div>
+						</div><!-- //ut-optset -->
+			
+						<ul class="item-lst" id="qna-item-lst">
+							<li>
+								<button type="button" class="item">
+									<span class="box">
+										<span class="thumb"><img class="img" src="../../img/temp/img_evt@2x.png" alt="OOO 썸네일 이미지"></span>
+										<span class="cont">
+											<strong class="tit">연금보험 vs. 연금저축보험 내게 맞는 보험은? 연금보험 vs. 연금저축보험 내게 맞는 보험은?</strong>
+											<span class="add">
+												<span class="tag">#생명보험 #연금 #신용카드 #생명생명생명생명생명</span>
+												<span class="ico-view"><em class="blind">조회</em><em class="num">99900</em></span>
+											</span>
+										</span>
+									</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="item">
+									<span class="box">
+										<span class="cont">
+											<strong class="tit">연금보험 vs. 연금저축보험 내게 맞는 보험은? 연금보험 vs. 연금저축보험 내게 맞는 보험은?</strong>
+											<span class="add">
+												<span class="tag">#생명보험 #연금 #신용카드 #생명생명생명생명생명</span>
+												<span class="ico-view"><em class="blind">조회</em><em class="num">100</em></span>
+											</span>
+										</span>
+									</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="item">
+									<span class="box">
+										<span class="thumb"><img class="img" src="../../img/temp/img_evt@2x.png" alt="OOO 썸네일 이미지"></span>
+										<span class="cont">
+											<strong class="tit">연금보험 vs. 연금저축보험 내게 맞는 보험은? 연금보험 vs. 연금저축보험 내게 맞는 보험은?</strong>
+											<span class="add">
+												<span class="tag">#생명보험 #연금 #신용카드 #생명생명생명생명생명</span>
+												<span class="ico-view"><em class="blind">조회</em><em class="num">100</em></span>
+											</span>
+										</span>
+									</span>
+								</button>
+							</li>
+						</ul><!-- //item-lst -->
+			
+						<div class="ut-more">
+							<button type="button" class="btn-more">
+								<span class="tnt">
+									<em class="tm">더보기</em>
+									<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+								</span>
+							</button>
+						</div>
+		
+						<div class="list-empty bd">
+							<p>검색 결과가 없습니다.</p>
+						</div><!-- //검색결과 없는 경우 -->
+		
+					</div><!-- //board-wrp -->
+
+					<script src="../../js/imagesloaded.pkgd.min.js"></script><!-- imagesloaded 로딩 (모든 이미지가 로딩된 후 실행되도록 할때 필요) -->
+					<script src="../../js/masonry.pkgd.min.js"></script><!-- masonry -->
+					<script>
+						// container 클래스안의 모든 이미지가 로딩되면 masonry 적용
+						$itemList = $('#qna-item-lst').imagesLoaded(function() {
+							$itemList.masonry({
+								itemSelector: '#qna-item-lst > li',
+								columnWidth: 291,
+								percentPosition: true,
+								horizontalOrder: true
+							});
+
+							$('.btn-more').on( 'click', function() {
+								var $elems = $('<li><button type="button" class="item"><span class="box"><span class="thumb"><img class="img" src="../../img/temp/img_evt@2x.png" alt="OOO 썸네일 이미지"></span><span class="cont"><strong class="tit">연금보험 vs. 연금저축보험 내게 맞는 보험은?</strong><span class="add"><span class="tag" >#생명보험 #연금 #신용카드 #생명생명생명생명생명</span><span class="ico-view"><em class="blind">조회</em><em class="num">100</em></span></span></span></span></button></li>');
+								$itemList.append( $elems ).masonry( 'appended', $elems );
+							});
+						});
+
+					</script>
+
+				</section>
+
+				<section class="sect page notice detail" data-sid="ui-bd10">
+					<h3 class="hdt">상세 : 기본</h3>
+
+					<section class="board-view">
+						<div class="tit-area">
+							<h3 class="board-tit">모바일창구 간편비밀번호 및 지문인증 서비스일시 순단현상 발생안내 모바일창구 간편비밀번호 및 지문인증 서비스일시 순단현상 발생안내</h3>
+							<div class="info">
+								<div class="add">
+									<span class="date">2020.01.01</span>
+								</div>
+							</div>
+							
+						</div>
+						<div class="cnt-area">
+							<div class="cnt">
+								<p>금융결제원 생체정보인식 분산관리시스템 관련 통신장비 교체 작업에 따라, 모바일창구 간편비밀번호 및 지문인증 로그인/전자서명 서비스 이용시 일시적인 순단현상이 발생할 수 있음을 알려드립니다. 서비스 이용에 불편을 드리는 점 양해 부탁드립니다.</p>
+								<p>금융결제원 생체정보인식 분산관리시스템 관련 통신장비 교체 작업에 따라, 모바일창구 간편비밀번호 및 지문인증 로그인/전자서명 서비스 이용시 일시적인 순단현상이 발생할 수 있음을 알려드립니다. 서비스 이용에 불편을 드리는 점 양해 부탁드립니다.</p>
+							</div>
+							<div class="atta_file">
+								<ul class="file-lst">
+									<li>
+										<a href="javascript:;" class="ico file" title="다운로드">해외송금 알바를 가장한 보이스피싱 피해금 인출책 모집광고를 조심하세요 - 소비자경보 주의 발령 해외송금 알바를 가장한 보이스피싱 피해금 인출책 모집광고를 조심하세요 - 소비자경보 주의 발령.pdf</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="ico file" title="다운로드">소비자경보 주의 발령.pdf</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="ico file" title="다운로드">해외송금 알바를 가장한 보이스피싱 피해금 인출책 모집광고를 조심하세요.pdf</a>
+									</li>
+								</ul>
+							</div><!-- //atta_file -->
+						</div>
+					</section><!-- //board-view -->
+					
+					<div class="btn-set lst">
+						<button type="button" class="btn rd md">목록</button>
+					</div>
+
+				</section>
+
+
+
+			</div>
+		</div>
+
+	</main>
+
+
+
+	<script>
+
+	</script>
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+
+</body>
+</html>
