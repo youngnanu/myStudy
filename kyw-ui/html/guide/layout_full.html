@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+<style>
+
+</style>
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<main class="container page is-full" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="box-top">
+				<div class="page-hdt">
+					<h2 class="stit hd-tit2">페이지 타이틀</h2>
+					<div class="desc">페이지 설명 설명페이지 설명 설명페이지 설명 설명페이지 설명 설명페이지 설명 설명</div>
+				</div>
+			</div>
+
+			<div class="ut-tabs f">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">보험</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">다이렉트</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">퇴직연금</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">대출</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_5" href="javascript:;">편드&신탁</a></li>
+				</ul>
+			</div>
+
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+				<section class="box-main">
+					<div class="inner">
+						<div class="head">
+							<h3 class="tit">퇴직연금에서 운용하는<br><strong>다양한 상품을 알아보세요!</strong></h3>
+						</div>
+						<div class="cont">
+							<div class="ut-tabs b">
+								<ul class="menu">
+									<li class="active"><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_1" href="javascript:;">종신/정기보험</a></li>
+									<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_2" href="javascript:;">건강/암보험</a></li>
+									<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_3" href="javascript:;">저축/연금보험/어린이보험</a></li>
+								</ul>
+							</div>
+							<div data-ui-tab-ctn="tab_b" aria-labelledby="tab_b_1" class="active">tab1</div>
+							<div data-ui-tab-ctn="tab_b" aria-labelledby="tab_b_2">tab2</div>
+							<div data-ui-tab-ctn="tab_b" aria-labelledby="tab_b_3">tab3</div>
+						</div>
+					</div>
+				</section>
+	
+				<section class="box-main">
+					<div class="inner a">
+						.inner.a w843<br>w843<br>w843<br>
+					</div>
+				</section>
+	
+				<section class="box-bnr">
+					<div class="inner">
+						<div class="ut-slide-num">
+							<div class="swiper-container swiper" data-slide-id="photo_1">
+								<ul class="swiper-wrapper slide">
+									<li class="swiper-slide">
+										<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/0.jpg" alt="이미지"></a></div>
+									</li>
+									<li class="swiper-slide">
+										<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/0.jpg" alt="이미지"></a></div>
+									</li>
+									<li class="swiper-slide">
+										<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/0.jpg" alt="이미지"></a></div>
+									</li>
+								</ul>
+								<div class="pagination"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+	
+				<section class="box-sub">
+					<div class="inner">
+						<div class="head"><strong class="tit">제목제목<br>제목제목</strong></div>
+						<div class="cont">내용<br>내용<br>내용<br>내용<br>내용</div>
+					</div>
+				</section>
+			</div>
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">탭내용2</div>
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_3">탭내용3</div>
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_4">탭내용4</div>
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_5">탭내용5</div>
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>
