@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer d pop-sample4" id="pop-sample4">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">이벤트 레이어팝업</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="imgBox"><img src="../../img/temp/banner_1.png" alt=""></div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="bot-btn">
+					<label class="checkbox"><input type="checkbox"><span class="txt">오늘은 그만 보기</span></label>
+					<button type="button" class="bt close" onclick="ui.popup.close('pop-sample4');">닫기</button>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<article class="pop-layer d pop-sample5" id="pop-sample5">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">공지 레이어팝업</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="noti-head">
+						<h2 class="ptit">공지 타이틀</h2>
+					</div>
+					<div class="noti-cont">내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="bot-btn">
+					<label class="checkbox"><input type="checkbox"><span class="txt">다시 보지 않기</span></label>
+					<button type="button" class="bt close" onclick="ui.popup.close('pop-sample5');">닫기</button>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<script>
+		ui.popup.open('pop-sample4');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample2',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		}); 
+		*/
+		
+	</script>
+</div>
+</body>
+</html>
