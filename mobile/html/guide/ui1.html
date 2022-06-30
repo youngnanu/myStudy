@@ -1,0 +1,2013 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<meta name="theme-color" content="#333333">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	<link href="../../font/Pretendard-Bold.woff2" as="font" type="font/woff" crossorigin="anonymous" rel="preload">
+	<link href="../../font/Pretendard-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous" rel="preload">
+
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+	<link href="../guide/shCore.css" rel="stylesheet">
+	<script src="../guide/shCore.js"></script>
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-title,is-gnb","title":"UI 샘플1"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<button type="button" class="btn-ui"><b>ui</b></button>
+	<nav class="uimenu">
+		<div class="menu">
+			<ul class="list"></ul>
+		</div>
+	</nav>
+	<div id="bar-ht"><i></i></div>
+
+	<main class="container page ui" id="container">
+
+		<div class="contents" id="contents">
+
+			<div class="uisect">
+				<section class="sect" data-sid="ui-agent">
+					<h3 class="hdt">User-Agent</h3>
+					<div class="device">
+						<div id="userAgent"></div>
+						<div id="cssStatus"></div>
+						<div id="browserStatus"></div>
+						<div id="iosSafe"></div>
+					</div>
+					<table class="tblist a tbdevice" cellpadding="0" cellspacing="0">
+						<caption>테이블설명</caption>
+						<thead>
+							<tr>
+								<th scope="col"><em class="chrome">Chrome</em></th>
+								<th scope="col"><em class="firefox">Firefox</em></th>
+								<th scope="col"><em class="opera">Opera</em></th>
+								<th scope="col"><em class="safari">Safari</em></th>
+								<th scope="col"><em class="edge">Edge</em></th>
+								<th scope="col"><em class="ie">IE</em></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>11+</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+
+
+				<section class="sect" data-sid="ui-titles">
+					<h3 class="hdt">타이틀</h3>
+					<div class="snippets">
+						<p>hd-tit 타이틀</p>
+					</div>
+					<h1 class="hd-tit1">H1 타이틀 <i class="line">밑줄</i> 타이틀.hd-tit1</h1>
+					<h1 class="hd-tit2">H2 타이틀 <i class="line">밑줄</i> 타이틀.hd-tit2</h1>
+					<h1 class="hd-tit3">H3 타이틀 <i class="line">밑줄</i> 타이틀.hd-tit3</h1>
+					<h1 class="hd-tit4">H4 타이틀 <i class="line">밑줄</i> 타이틀.hd-tit4</h1>
+					<h1 class="hd-tit5">H5 타이틀 <i class="line">밑줄</i> 타이틀.hd-tit5</h1>
+				</section>
+
+				<section class="sect" data-sid="ui-button">
+					<h3 class="hdt">버튼 - 높이,색상</h3>
+					<div class="snippets">
+						<p>btn.a 버튼</p> <p>btn.button 버튼</p>
+					</div>
+					<a href="javascript:;" role="button" class="btn xs">버튼xs</a>
+					<a href="javascript:;" role="button" class="btn sm">버튼sm</a>
+					<a href="javascript:;" role="button" class="btn">버튼</a>
+					<a href="javascript:;" role="button" class="btn md">버튼md</a>
+					<a href="javascript:;" role="button" class="btn lg">버튼lg</a>
+					<a href="javascript:;" role="button" class="btn xl">버튼xl</a>
+					<p class="gap"></p>
+					<button type="button" class="btn a">버튼.a</button>
+					<button type="button" class="btn b">버튼.b</button>
+					<button type="button" class="btn c">버튼.c</button>
+					<!-- <button type="button" class="btn d">버튼.d</button>
+					<button type="button" class="btn e">버튼.e</button> -->
+					<button type="button" class="btn f">버튼.f</button>
+					<button type="button" class="btn g">버튼.g</button>
+					<p class="gap"></p>
+					<button type="button" class="btn a" disabled>버튼.a</button>
+					<button type="button" class="btn b" disabled>버튼.b</button>
+					<button type="button" class="btn c" disabled>버튼.c</button>
+					<!-- <button type="button" class="btn d" disabled>버튼.d</button>
+					<button type="button" class="btn e" disabled>버튼.e</button> -->
+					<button type="button" class="btn f" disabled>버튼.f</button>
+					<button type="button" class="btn g" disabled>버튼.g</button>
+					<span>button:disabled</span>
+					<p class="gap"></p>
+					<a href="javascript:;" role="button" class="btn a disabled">버튼.a</a>
+					<a href="javascript:;" role="button" class="btn b disabled">버튼.b</a>
+					<a href="javascript:;" role="button" class="btn c disabled">버튼.c</a>
+					<!-- <a href="javascript:;" role="button" class="btn d disabled">버튼.d</a>
+					<a href="javascript:;" role="button" class="btn e disabled">버튼.e</a> -->
+					<a href="javascript:;" role="button" class="btn f disabled">버튼.f</a>
+					<a href="javascript:;" role="button" class="btn g disabled">버튼.g</a>
+					<span>a.disabled</span>
+					<p class="gap"></p>
+					<div style="background: #f5f5f5; padding: 20rem 20rem;">
+
+						<button type="button" class="btn-select">카테고리 선택</button>
+
+						<span class="select sort">
+							<select id="sel_idss0" name="sel_idss0" title="선택">
+								<option>카테고리 선택</option>
+								<option>카테고리 선택</option>
+								<option>카테고리 선택</option>
+								<option>카테고리 선택</option>
+								<option>카테고리 선택</option>
+							</select>
+						</span>
+
+					</div>
+					<p class="gap"></p>
+					<div class="btn-set">
+						<button type="button" class="btn md ico-down">버튼</button>
+						<button type="button" class="btn md ico-pic">버튼</button>
+						<button type="button" class="btn md ico-upload">버튼</button>
+						<button type="button" class="btn md ico-elink">버튼</button>
+						<button type="button" class="btn md ico-nlink">버튼</button>
+					</div>
+
+					<div class="btn-set">
+						<button type="button" class="btn sm ico-down ico-r">버튼</button>
+						<button type="button" class="btn sm ico-pic  ico-r">버튼</button>
+						<button type="button" class="btn sm ico-upload ico-r">버튼</button>
+						<button type="button" class="btn sm ico-elink ico-r">버튼</button>
+						<button type="button" class="btn sm ico-nlink ico-r">버튼</button>
+					</div>
+					<div class="btn-set">
+						<button type="button" class="btn md ico-r ico-check">전자증명서 확인</button>
+						<button type="button" class="btn md ico-r ico-call ">콜센터 바로 연결</button>
+					</div>
+
+					<div class="btn-set">
+						<a href="https://map.kakao.com/" title="새창열림" target="_blank" role="button" class="btn md ico-r ico-map">카카오맵 열기</a>
+					</div>
+
+					<div class="btn-set">
+						<button type="button" class="btn lg rd a">버튼</button>
+						<button type="button" class="btn lg rd b">버튼</button>
+					</div>
+
+					<div class="btn-set b2">
+						<button type="button" class="btn lg rd b">취소</button>
+						<button type="button" class="btn lg rd a">다음</button>
+					</div>
+
+					<div class="btn-set vt">
+						<button type="button" class="btn">버튼 세로</button>
+						<button type="button" class="btn">버튼 세로</button>
+					</div>
+
+					<div class="btn-set ct">
+						<a href="javascript:;" role="button" class="btn wm">가운데</a>
+						<a href="javascript:;" role="button" class="btn wm">가운데</a>
+					</div>
+
+					<div class="btn-set vt">
+						<label class="btn btn-attach ico-pic">
+							<em class="btx">사진추가</em>
+							<input class="file" type="file" accept="image/*; capture=camera">
+						</label>
+						<label class="btn btn-attach ico-upload">
+							<em class="btx">파일추가</em>
+							<input class="file" type="file">
+						</label>
+					</div>
+
+					<div class="btn-set">
+						<a href="javascript:;" role="button" class="btn md ico-search ico-r">내게 맞는 상품 찾기</a>
+					</div>
+
+					<p class="gap"></p>
+
+
+					<div class="ut-fileadd">
+						<div class="hdt">
+							<span class="tt">첨부안내</span>
+							<div class="ut-tooltip">
+								<button type="button" class="ico help sm bt-tooltip">도움말</button>
+								<div class="toolctn">
+									<div class="tptit">첨부안내</div>
+									<div class="tpmsg">
+										<ul class="bullet d">
+											<li>서류는 최대 15개까지 첨부할 수 있습니다.</li>
+											<li>한 번에 업로드 가능한 파일 개수는 10개입니다. 첨부파일이 11개 이상이면 10장을 먼저 올린 후 나머지를 첨부해 주세요.</li>
+											<li>첨부파일 용량은 총 30MB입니다.</li>
+											<li>첨부 가능한 파일확장자는 TIF, TIFF, JPG, JPEG, PNG입니다.</li>
+										</ul>
+										<ul class="bullet b">
+											<li>청구서 등록 전에 누락된 서류가 없는지 한 번 더 확인해 주세요.</li>
+											<li>글자를 알아보기 어려운 서류가 첨부된 경우 모바일 사고보험금 심사 시 반송될 수 있습니다.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="btn-set btbox">
+							<label class="btn md d btn-attach ico-pic">
+								<em class="btx">촬영하기</em>
+								<input class="file" type="file" accept="image/*; capture=camera">
+							</label>
+							<label class="btn md d btn-attach ico-upload">
+								<em class="btx">첨부하기</em>
+								<input class="file" type="file" accept="image/*; capture=camera">
+							</label>
+						</div>
+						<ul class="ut-flist flist">
+							<li>
+								<div class="fset">
+									<button type="button" class="pic" title="IMG_48473.jpg">파일보기</button>
+									<div class="fnm">
+										<div class="fm">IMG_48473.jpg</div>
+										<div class="fs">223.12kb</div>
+									</div>
+									<div class="btd"><button type="button" class="btn-del" title="IMG_48473.jpg">사진삭제</button></div>
+								</div>
+							</li>
+							<li>
+								<div class="fset">
+									<button type="button" class="pic" title="IMG_48473.jpg">파일보기</button>
+									<div class="fnm">
+										<div class="fm">IMG_48473.jpg</div>
+										<div class="fs">223.12kb</div>
+									</div>
+									<div class="btd"><button type="button" class="btn-del" title="IMG_48473.jpg">사진삭제</button></div>
+								</div>
+							</li>
+						</ul>
+						<div class="nums">
+							<em class="n">10MB</em>
+							<em class="t">20MB</em>
+						</div>
+					</div>
+
+					<div class="codebox">
+						<div class="code">
+							<pre class="brush: html">
+								<button type="button" class="btn">버튼</button>
+								<button type="button" class="btn" disabled>버튼</button>
+								<a href="javascript:;" type="button" class="btn" disabled>버튼</a>
+								<a href="javascript:;" type="button" class="btn">버튼</a>
+							</pre>
+						</div>
+					</div>
+
+					<!-- <div class="btn-list">
+						<div class="fl"><a href="javascript:;" class="btn">왼쪽</a></div>
+						<div class="fr"><a href="javascript:;" class="btn">오른쪽</a></div>
+					</div> -->
+
+
+				</section>
+
+				<section class="sect" data-sid="ui-layerpop">
+					<h3 class="hdt">레이어팝업 - ui.popup</h3>
+					<div class="snippets">
+						<p>popup.a</p><p>popup.c</p>
+					</div>
+					<section class="codebox">
+						<div class="code">
+							<div class="bts">
+								<a class="btn" id="btn_pop_a" href="javascript:;" onclick="popsample_A();">팝레이어A<br>전체팝업</a>
+								<a class="btn" id="btn_pop_b" href="javascript:;" onclick="popsample_B();">팝레이어B<br>레이어팝업</a>
+								<a class="btn" id="btn_pop_c" href="javascript:;" onclick="popsample_C();">팝레이어C<br>바텀업</a>
+								<a class="btn" id="btn_pop_d" href="javascript:;" onclick="popsample_D();">팝레이어D<br>이벤트</a>
+								<a class="btn" id="btn_pop_d2" href="javascript:;" onclick="popsample_D2();">팝레이어D<br>공지</a>
+							</div>
+							<pre class="brush: js">
+								ui.popup.open('pop-sample1'); // 팝레이어열기
+								ui.popup.close('pop-sample1'); // 팝레이어닫기
+
+								ui.popup.open("pop-sample1",{ // 레이어팝업 콜백
+									ocb:function(){
+										console.log("pop-sample1 열림");
+									},
+									ccb:function(){
+										console.log("pop-sample1 닫힘");
+										$("#btn_pop_a").focus();
+									}
+								});</pre>
+						</div>
+					</section>
+					<script>
+
+						var popsample_A = function(){
+							// 레이어팝업 열기 콜백
+							ui.popup.open("pop-sample1",{
+								ocb:function(){
+									console.log("pop-sample1 열림");
+								},
+								ccb:function(){
+									console.log("pop-sample1 닫힘");
+									$("#btn_pop_a").focus();
+								}
+							});
+						}
+						var popsample_A_close = function(){
+							// 레이어팝업 닫기 콜백 추가
+							ui.popup.close("pop-sample1",{
+								ccb:function(){
+									console.log("pop-sample1 닫힘 22222222222");
+									popsample_C();
+								}
+							});
+						}
+						var popsample_B = function(){
+							// 레이어팝업 열기 콜백
+							ui.popup.open("pop-sample2",{
+								ocb:function(){
+									console.log("pop-sample2 열림");
+								},
+								ccb:function(){
+									console.log("pop-sample2 닫힘");
+									$("#btn_pop_b").focus();
+								}
+							});
+						}
+						var popsample_C = function(){
+							// 레이어팝업 열기 콜백
+							ui.popup.open("pop-sample3",{
+								ccb:function(){
+									console.log("pop-sample3 닫힘");
+									$("#btn_pop_c").focus();
+								}
+							});
+						}
+						var popsample_D = function(){
+							// 레이어팝업 열기 콜백
+							ui.popup.open("pop-sample4",{
+								ocb:function(){
+									console.log("pop-sample4 열림");
+								},
+								ccb:function(){
+									console.log("pop-sample4 닫힘");
+									$("#btn_pop_d").focus();
+								}
+							});
+						}
+						var popsample_D2 = function(){
+							// 레이어팝업 열기 콜백
+							ui.popup.open("pop-sample5",{
+								ocb:function(){
+									console.log("pop-sample5 열림");
+								},
+								ccb:function(){
+									console.log("pop-sample5 닫힘");
+									$("#btn_pop_d2").focus();
+								}
+							});
+						}
+					</script>
+				</section>
+
+				<section class="sect" data-sid="ui-alert">
+					<h3 class="hdt">알럿,컨펌 - Alert,Confirm</h3>
+					<div class="codebox">
+						<div class="code">
+							<div class="bts">
+								<a class="btn" href="javascript:;" onclick="alert_sample_1();">알럿1</a>
+								<a class="btn" href="javascript:;" onclick="alert_sample_2();">알럿2</a>
+								<a class="btn" href="javascript:;" onclick="confirm_sample_1();">컨펌1</a>
+								<a class="btn" href="javascript:;" onclick="confirm_sample_2();">컨펌2</a>
+							</div>
+							<pre class="brush: js">
+							ui.alert("공통 알럿창입니다."); // 옵션없이 메시지만..
+							ui.alert("공통 알럿창입니다.",{ // 알럿 옵션들
+								tit:"알럿타이틀",
+								ycb:function(){
+									console.log("알럿확인결과");
+								},
+								ybt:"확인" // 기본값 "확인"
+							});
+
+							ui.confirm("공통 컨펌창 입니다.",{ // 컨펌 창 옵션들
+								tit:"타이틀",
+								ycb:function(){
+									console.log("컨펌확인결과");
+								},
+								ncb:function(){
+									console.log("컨펌취소결과");
+								},
+								ybt:"확인", // 기본값 "확인"
+								nbt:"취소"  // 기본값 "취소"
+							});</pre>
+						</div>
+					</div>
+
+					<script>
+						var confirm_sample_1 = function(){
+							ui.confirm("신청을 취소하시겠습니까?",{ // 컨펌 창 띄우기
+								ycb:function(){
+									console.log("컨펌1확인결과");
+								},
+								ncb:function(){
+									console.log("컨펌1취소결과");
+								},
+								ybt:"예",
+								nbt:"아니오"
+							});
+						}
+						var confirm_sample_2 = function(){
+							ui.confirm("추가 납입처리 진행중인 건이 있습니다. 해지 처리는 법인콜센터(1588-0730)로 문의주시기 바랍니다.",{ // 컨펌 창 띄우기
+								tit:"안내",
+								ycb:function(){
+									console.log("컨펌2확인결과");
+								},
+								ncb:function(){
+									console.log("컨펌2취소결과");
+								},
+								ybt:"확인",
+								nbt:"취소"
+							});
+						}
+						var alert_sample_1 = function(){
+							// 알럿창 띄우기
+							ui.alert("알럿 메시지 입니다.",{
+								ycb:function(){
+									console.log("알럿1확인결과");
+								},
+								ybt:"확인"
+							});
+						}
+						var alert_sample_2 = function(){
+							// 알럿창 띄우기
+							ui.alert("알럿 메시지 입니다.",{
+								tit:"타이틀",
+								ycb:function(){
+									console.log('알럿2확인결과');
+								},
+								ybt:"확인"
+							});
+						}
+					</script>
+
+				</section>
+
+				<section class="sect" data-sid="ui-toast"  style="display: none;">
+					<h3 class="hdt">토스트UI - ui.toast</h3>
+					<div class="codebox">
+						<div class="code">
+							<div class="bts">
+								<a class="btn" href="javascript:;" onclick="toast_sample1();">토스트</a>
+								<!-- <a class="btn" href="javascript:;" onclick="toast_sample2();">토스트 링크</a> -->
+							</div>
+							<pre class="brush: js">
+								// 토스트 창띄우기
+								ui.toast("토스트메시지입니다.");
+								ui.toast("토스트메시지입니다.",{
+									cls:"abcd", // null , string
+									bot:0,  // 바닥에서 띄울 간격 기본 0
+									sec:2000 // 사라질 시간 number 기본 2000
+								});
+								ui.toast('<div class="link"><p class="tt">토스트 토스트 토스트 메세지입니다.</p><a href="javascript:;" class="lk">바로가기</a></div>',{
+									cls:"abcd", // null , string
+									bot:0,  // 바닥에서 띄울 간격 기본 0
+									sec:2000 // 사라질 시간 number 기본 2000
+								});</pre>
+						</div>
+					</div>
+					<script>
+						var toast_sample1 = function(){
+							ui.toast("위험자산은 전체 적립금의 70%까지 매도 가능하며, 현재 71% 입력되었습니다. 위험자산 매도 금액을 조정해주세요.",{
+								cls:"abcd", // null , string
+								bot:0,  // 바닥에서 띄울 간격 기본 0
+								sec:2000, // 사라질 시간 number 기본 2000
+								ccb:function(){
+									console.log("토스트 닫힘");
+								}
+							});
+						}
+						var toast_sample2 = function(){
+							ui.toast('<div class="link"><p class="tt">토스트 토스트 토스트 메세지입니다.</p><a href="javascript:;" class="lk">바로가기</a></div>',{   // 토스트 창띄우기
+								// sec:1500000,
+								// bot:77
+							});
+						}
+					</script>
+				</section>
+
+
+				<section class="sect" data-sid="ui-inputs">
+					<h3 class="hdt">입력 Input, Textarea</h3>
+					<div class="snippets">
+						<p>input_text 텍스트입력</p>
+						<p>input_won 금액입력</p>
+						<p>input_date 날짜입력</p>
+						<p>input_email  이메일</p>
+						<p>input_rsnum  주민등록번호</p>
+						<p>input_biznum 사업자등록번호</p>
+						<p>input_       기타등등</p>
+					</div>
+					<div class="ut-form a">
+						<ul class="form">
+							<li><span class="input a"><label class="lb" for="input-1">Label</label><input type="text" placeholder="입력하세요" id="input-1"></span></li>
+							<li><span class="input a"><label class="lb blind" for="input-01">Label</label><input type="text" title="입력" placeholder="입력하세요" id="input-01"></span></li>
+							<li><span class="input a xdel"><label class="lb" for="input-2">Label</label><input type="text" placeholder="입력하세요" value="포커스 시 지우기버튼" id="input-2"></span></li>
+							<li><span class="input a xdel xset"><label class="lb" for="input-221">Label</label><input type="text" placeholder="입력하세요" value="값이 있으면 지우기버튼" id="input-221"></span></li>
+							<li><span class="input a"><label class="lb" for="input-3">Label</label><input type="text" placeholder="입력하세요" value="텍스트텍스트" id="input-3"></span></li>
+							<li>
+								<span class="input a">
+									<label class="lb" for="input-4">옆에 버튼 있네?</label>
+									<input type="text" placeholder="입력하세요" value="텍스트텍스트" id="input-4">
+									<span class="ibts"><button type="button" class="btn sm b">버튼버튼</button></span>
+								</span>
+							</li>
+							<!-- <li>
+								<span data-ui-balloon="left,top" role="tooltip" id="passwordrules">실손의료비 포함 청구 시 꼭 선택하세요.</span>
+								<span class="input a ok"><label class="lb" for="input-120">Label</label><input type="text" placeholder="입력하세요" value="텍스트텍스트" id="input-120" aria-describedby="passwordrules"></span>
+								<div class="vald-msg show ok">입력한 비밀번호는 안전합니다.</div>
+							</li>
+							<li>
+								<span class="input a ok"><label class="lb" for="input-5">Label</label><input type="text" placeholder="입력하세요" value="텍스트텍스트" id="input-5"></span>
+								<div class="vald-msg show ok">입력한 비밀번호는 안전합니다.</div>
+							</li>
+							<li>
+								<span class="input a wn"><label class="lb" for="input-6">Label</label><input type="text" placeholder="입력하세요" value="텍스트텍스트" id="input-6"></span>
+								<div class="vald-msg show wn">입력하신 비밀번호는 보안에 취약합니다.</div>
+							</li> -->
+							<li>
+								<span class="input a no"><label class="lb" for="input-7">Label</label><input type="text" placeholder="입력하세요" value="텍스트텍스트" id="input-7"></span>
+								<div class="vald-msg show no">특수문자를 반드시 사용하세요.</div>
+							</li>
+							<li><span class="input a"><label class="lb" for="input-8">Label</label><input type="password" placeholder="비밀번호" id="input-8"></span></li>
+							<li><span class="input a"><label class="lb" for="input-9">Label</label><input type="text" readonly value="READONLY" id="input-9"></span></li>
+							<li><span class="input a"><label class="lb" for="input-10">Label</label><input type="text" disabled value="DISABLED" id="input-10"></span></li>
+							<li><span class="input a"><label class="lb" for="input-11">Number</label><input type="tel" pattern="\d*" placeholder="숫자" id="input-11"></span></li>
+							<li>
+								<span class="input a won">
+									<label class="lb" for="input-12">Label</label>
+									<input type="tel" placeholder="입력하세요" value="300,000" id="input-12">
+									<i class="w">원</i></span>
+							</li>
+							<div class="snippets">
+								<p>input_won 금액입력(전체지우기 추가)</p>
+							</div>
+							<li>
+								<span class="input a won wxdel wxdel">
+									<label class="lb" for="input-18">Label</label>
+									<input type="tel" placeholder="입력하세요" value="300,000" id="input-18">
+									<i class="w">원</i></span>
+							</li>
+							<li>
+								<span class="input a age">
+									<label class="lb" for="age-12">나이</label>
+									<i class="tx ta">만</i>
+									<input type="tel" pattern="\d*" placeholder="나이입력" id="age-12">
+									<i class="tx tb">세</i>
+								</span>
+							</li>
+							<li>
+								<div class="ut-addrs addrs">
+									<span class="input a adr1">
+										<label class="lb" for="adr_id3" role="text">자택주소 <em class="ast">는 필수항목입니다</em></label>
+										<div class="ibts"><button type="button" class="btn sm b sch">검색</button></div>
+										<input id="adr_id3" type="text" placeholder="주소를 입력해주세요" readonly>
+									</span>
+									<span class="input a adr2"><label class="lb" for="adr_id4">나머지 주소</label><input id="adr_id4" type="text" placeholder="나머지 주소를 입력해주세요"></span>
+								</div>
+							</li>
+							<li>
+								<div class="ut-email email">
+									<div class="enam">
+										<span class="input a emids"><label class="lb" for="emids_0">이메일</label><input id="emids_0" type="email" placeholder="아이디"></span>
+										<i class="at">@</i>
+										<span class="input a emcom"><label class="lb" for="emcom_id0">주소입력</label><input id="emcom_id0" type="text" placeholder="직접입력"></span>
+									</div>
+									<ul class="ebts">
+										<li><button type="button" value="naver.com" class="btn sm bt">Naver</button></li>
+										<li><button type="button" value="daum.net"  class="btn sm bt">Daum</button></li>
+										<li><button type="button" value="gmail.com" class="btn sm bt">Gmail</button></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="ut-percent">
+									<span class="input a coms no-lb">
+										<input type="tel" title="투자수익률 설정" pattern="\d*">
+										<i class="p">%</i>
+									</span>
+									<i class="ds">~</i>
+									<span class="input a coms no-lb">
+										<input type="tel" title="투자수익률 설정" pattern="\d*">
+										<i class="p">%</i>
+									</span>
+								</div>
+							</li>
+							<li>
+								<div class="snippets">
+									<p>input_rsnum // 주민등록번호</p>
+								</div>
+								<span class="input a ut-rsnum">
+									<label class="lb" for="rsnum_1">주민등록번호</label>
+									<input id="rsnum_1" type="tel" class="fn" pattern="\d*" title="앞 6자리" placeholder="앞 6자리">
+									<i class="ds">-</i>
+									<input type="tel" class="ln" pattern="\d*" title="뒤 7자리" placeholder="뒤 7자리">
+								</span>
+							</li>
+							<li>
+								<span class="input a nobg ut-rsnum">
+									<label class="lb" for="rsnum_2">주민등록번호</label>
+									<input id="rsnum_2" type="tel" class="fn" pattern="\d*" title="앞 6자리" placeholder="앞 6자리" value="830000">
+									<i class="ds">-</i>
+									<input type="tel" class="mn" pattern="\d*" title="뒤 1자리" value="1" >
+									<input type="tel" class="ln" pattern="\d*" title="뒤 2~6자리" value="******" readonly>
+								</span>
+							</li>
+							<li>
+								<span class="input a nobg ut-rsnum">
+									<label class="lb" for="rsnum_3">주민등록번호</label>
+									<input id="rsnum_3" type="tel" class="fn" pattern="\d*" title="앞 6자리" placeholder="앞 6자리" value="830000">
+									<i class="ds">-</i>
+									<input type="tel" class="mn int" pattern="\d*" title="뒤 1자리" placeholder="뒤 1자리">
+									<input type="tel" class="ln" pattern="\d*" title="뒤 2~6자리" value="******" readonly>
+								</span>
+							</li>
+							<li>
+								<div class="snippets">
+									<p>input_biznum 사업자등록번호 </p>
+								</div>
+								<span class="input a ut-biznum">
+									<label class="lb" for="bznum_1">사업자등록번호</label>
+									<input type="tel"class="fc" pattern="\d*" value="000-00-0000" id="bznum_1">
+								</span>
+							</li>
+							<li>
+								<div class="snippets">
+									<p>input_phone 전화번호입력</p>
+								</div>
+								<div class="ut-phone">
+									<span class="select tcom">
+										<label for="phone-1" class="lb">통신사</label>
+										<select id="phone-1">
+											<option>SKT</option>
+											<option>KT</option>
+											<option>LGU+</option>
+											<option>SKT알뜰폰</option>
+											<option>KT알뜰폰</option>
+											<option>LGU+알뜰폰</option>
+										</select>
+									</span>
+									<span class="input a tnum"><label class="lb" for="phone-2">전화번호입력</label><input type="tel" pattern="\d*" placeholder="[-] 없이 입력해주세요" id="phone-2" oninput="ui.format.init(this)"></span>
+								</div>
+							</li>
+							<li>
+								<div class="ut-phone">
+									<span class="input a tnum"><label class="lb" for="phone-3">전화번호입력</label><input type="tel" pattern="\d*" placeholder="[-] 없이 입력해주세요" id="phone-3" oninput="ui.format.init(this)"></span>
+								</div>
+							</li>
+							<li>
+								<div class="snippets">
+									<p>input_certi 인증번호1</p>
+								</div>
+								<div class="ut-certi">
+									<span class="input a">
+										<label class="lb" for="certi-1">인증번호 확인</label>
+										<div class="ibts"><button type="button" class="btn sm b">인증번호 발송</button></div>
+										<input type="number" class="cnm" pattern="\d*" placeholder="인증번호를 입력" id="certi-1">
+										<div class="ctt ibts" style="display: none;">
+											<i class="tt">입력시간</i><i class="ts">05:32</i>
+										</div>
+									</span>
+									<div class="bts" style="display: none;"><button type="button" class="btn sm b">확인</button></div>
+								</div>
+							</li>
+							<li>
+								<div class="snippets">
+									<p>input_certi 인증번호2</p>
+								</div>
+								<div class="ut-certi">
+									<span class="input a">
+										<label class="lb" for="certi-2">인증번호 확인</label>
+										<div class="ctt ibts">
+											<i class="tt">입력시간</i><i class="ts">05:32</i>
+										</div>
+										<input type="number" class="cnm" pattern="\d*" placeholder="전송된 인증번호를 입력" id="certi-2">
+									</span>
+									<div class="btn-set vt bts">
+										<button type="button" class="btn sm b">확인</button>
+										<button type="button" class="btn sm c">인증번호 재발송</button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="snippets">
+									<p>input_card 카드번호</p>
+								</div>
+								<div class="ut-cdnum input a">
+									<span class="lb">카드번호</span>
+									<div class="set">
+										<input type="tel"   class="cd c1" pattern="\d*" title="1~4자리" placeholder="앞 4자리">
+										<i class="ds">-</i>
+										<input type="password" class="cd c2" pattern="\d*" title="5~6자리" placeholder="****">
+										<i class="ds">-</i>
+										<input type="password" class="cd c3" pattern="\d*" title="7~8자리" placeholder="****">
+										<i class="ds">-</i>
+										<input type="tel"   class="cd c4" pattern="\d*" title="9~12자리" placeholder="뒤 4자리">
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="snippets">
+									<p>input_weekday 임신주수 </p>
+								</div>
+								<span class="input a ut-weekday">
+									<label class="lb" for="weekday">임신주수</label>
+									<input type="tel" class="week" pattern="\d*" title="임신주수 주" placeholder="" value="0" readonly id="weekday">
+									<i class="txt1">주</i>
+									<input type="tel" class="day" pattern="\d*" title="임신주수 일" value="0" readonly>
+									<i class="txt2">일</i>
+								</span>
+							</li>
+							<li>
+								<span class="input a ut-weekday">
+									<label class="lb" for="weekday1">임신주수</label>
+									<input type="tel" class="week" pattern="\d*" title="임신주수 주" placeholder="" value="" id="weekday1">
+									<i class="txt1">주</i>
+									<input type="tel" class="day" pattern="\d*" title="임신주수 일" value="">
+									<i class="txt2">일</i>
+								</span>
+							</li>
+							<li>
+								<div class="snippets">
+									<p>검색창-정리중...</p>
+								</div>
+
+								<span class="input ipsch">
+									<label class="lb blind" for="keywords">검색어 입력</label>
+									<input type="search" placeholder="검색어를 입력해 주세요." title="검색어 입력" value="" id="keywords">
+									<span class="ibts"><button type="button" class="btn-sch">검색</button></span>
+								</span>
+
+								<br>
+
+								<span class="input ipsch del xdel">
+									<label class="lb blind" for="keywords1">검색어 입력</label>
+									<input type="search" placeholder="검색어를 입력해 주세요." title="검색하기" value="" id="keywords1">
+									<button type="button" class="btdel" tabindex="-1">삭제</button>
+									<span class="ibts"><button type="button" class="btn-sch">검색</button></span>
+								</span>
+
+								<br>
+
+								<span class="input ipsch">
+									<span class="select sort">
+										<select name="select-4" title="검색 영역 선택">
+											<option>전체</option>
+											<option>이름순</option>
+											<option>추천상품순</option>
+											<option>인기순</option>
+										</select>
+									</span>
+									<input type="search" placeholder="검색어를 입력해 주세요." title="검색어 입력" value="">
+									<span class="ibts"><button type="button" class="btn-sch">검색</button></span>
+								</span>
+
+								<br>
+
+								<span class="input a">
+									<label class="lb" for="input-srch">보험용어</label>
+									<input type="text" placeholder="검색어를 입력해 주세요." id="input-srch">
+									<span class="ibts"><button type="button" class="btn sm b">검색</button></span>
+								</span>
+
+								<br>
+
+								<span class="input a">
+									<label class="lb blind" for="input-srch2">검색어 입력</label>
+									<input type="text" placeholder="검색어를 입력해 주세요." title="검색어 입력" id="input-srch2">
+									<span class="ibts"><button type="button" class="btn sm b">검색</button></span>
+								</span>
+							</li>
+							<li>
+								<!-- [D] 2022-03-28 글자수(.num) 표시영역 박스영역 밖으로 위치 변경, (00자/300자) => (00/300자) 형식 통일 -->
+								<div class="snippets">
+									<p>textarea 텍스트박스</p>
+								</div>
+								<span class="textarea a">
+									<label for="textarea-1" class="lb blind">내용</label>
+									<textarea placeholder="텍스트에어리어" id="textarea-1"></textarea>
+									<span class="num">(<i class="i">00</i>/<i class="n">1,300</i>자)</span>
+								</span>
+							</li>
+						</ul>
+					</div>
+
+				</section>
+
+				<section class="sect" data-sid="ui-selects">
+					<h3 class="hdt">선택 Select</h3>
+					<div class="snippets">
+						<p>select.a  // 셀렉트</p>
+					</div>
+					<div class="ut-form a">
+						<ul class="form">
+							<li>
+								<span class="select a">
+									<label class="lb" for="select-4">Label</label>
+									<select name="select-4" id="select-4">
+										<option value="s-1">선택 하세요</option>
+										<option value="s-2">선택1</option>
+										<option value="s-3">선택2</option>
+										<option value="s-4" selected>선택3</option>
+									</select>
+								</span>
+							</li>
+							<li>
+								<span class="select a">
+									<label class="lb" for="select-1">Label</label>
+									<select name="select-1" id="select-1">
+										<option>선택 하세요 .a</option>
+										<option>선택1</option>
+										<option>선택2</option>
+										<option>선택3</option>
+									</select>
+								</span>
+							</li>
+							<li>
+								<span class="select def">
+									<select name="select-11" id="select-11" title="선택선택옵션">
+										<option selected>선택 하세요 .def</option>
+										<option>선택1</option>
+										<option>선택2</option>
+										<option>선택3</option>
+									</select>
+								</span>
+							</li>
+							<li>
+								<span class="input a"><label class="lb" for="input-13">은행/증권사 선택</label><input type="button" value="우리은행 셀렉트 같지만 버튼일경우" title="iOS 스크린리더 버튼 value값 인식x title에도 정보제공" id="input-13" onclick="console.log('호출')"></span>
+							</li>
+							<li>
+								<span class="input a">
+									<label class="lb" for="input-14">라벨값</label>
+
+
+									<input type="button" value="우리은행 셀렉트 같지만 버튼일경우" id="input-14" onclick="console.log('호출')">
+								</span>
+							</li>
+							<li>
+								<span class="select a">
+									<label class="lb" for="select-2">Label</label>
+									<select name="select-2" id="select-2" disabled>
+										<option selected>선택 하세요</option>
+										<option>선택1</option>
+										<option>선택2</option>
+										<option>선택3</option>
+									</select>
+								</span>
+
+							</li>
+							<li>
+								<span class="select a">
+									<label class="lb blind" for="select-3">XX를선택</label>
+									<select name="select-3" title="선택하셈">
+										<option>선택 하세요</option>
+										<option selected>선택1</option>
+										<option>선택2</option>
+										<option>선택3</option>
+									</select>
+								</span>
+							</li>
+						</ul>
+					</div>
+
+					<p class="gap"></p>
+
+
+					<div class="ut-optset optset">
+						<div class="opt pl">
+							<span class="tot">총 <i class="n">55</i> 명</span>  <span class="date">2020.01.01 기준</span>
+						</div>
+						<div class="opt pr">
+							<span class="select sort">
+								<select name="select-4" title="정렬선택">
+									<option>이름순</option>
+									<option>추천상품순</option>
+									<option>인기순</option>
+								</select>
+							</span>
+						</div>
+					</div>
+
+
+
+					<p class="gap"></p>
+
+
+					<div class="ut-optchk">
+						<span class="select sort">
+							<select name="select-a3" title="정렬선택">
+								<option>이름순</option>
+								<option>추천상품순</option>
+								<option>인기순</option>
+							</select>
+						</span>
+						<span class="select sort">
+							<select name="select-a4" title="정렬선택">
+								<option>이름순</option>
+								<option>추천상품순</option>
+								<option>인기순</option>
+							</select>
+						</span>
+					</div>
+
+					<p class="gap"></p>
+
+
+					<div class="ut-chksort">
+						<label class="checkbox op"><input type="checkbox"><span class="txt">응모한 이벤트만 보기</span></label>
+						<span class="select sort">
+							<select name="select-4" title="정렬선택">
+								<option>이름순</option>
+								<option>추천상품순</option>
+								<option>인기순</option>
+							</select>
+						</span>
+					</div>
+
+					<p class="gap"></p>
+
+					<div class="ut-chksort">
+						<span class="select sort">
+							<select name="select-4" title="정렬선택">
+								<option>이름순</option>
+								<option>추천상품순</option>
+								<option>인기순</option>
+							</select>
+						</span>
+						<label class="checkbox op"><input type="checkbox"><span class="txt">응모한 이벤트만 보기</span></label>
+					</div>
+
+
+					<p class="gap"></p>
+
+					<label class="checkbox op"><input type="checkbox"><span class="txt">응모한 이벤트만 보기</span></label>
+
+
+
+				</section>
+
+				<section class="sect" data-sid="ui-checkradio">
+					<h3 class="hdt">선택 Radio, Checkbox</h3>
+					<div class="snippets">
+						<p>radio</p>
+						<p>checkbox</p>
+					</div>
+					<label class="checkbox"><input type="checkbox"><span class="txt">선택</span></label>
+					<label class="checkbox"><input type="checkbox" checked><span class="txt"></span></label>
+					<label class="checkbox"><input type="checkbox" checked disabled><span class="txt"></span></label>
+					<label class="checkbox"><input type="checkbox" disabled><span class="txt"></span></label>
+					<p class="gap"></p>
+
+					<label class="radio"><input type="radio" name="radio1" id="kkk1"><span class="txt">선택</span></label>
+					<label class="radio"><input type="radio" name="radio1" id="kkk2" checked><span class="txt">선택</span></label>
+
+
+					<label class="radio"><input type="radio" name="radio2" checked disabled><span class="txt">선택</span></label>
+					<label class="radio"><input type="radio" name="radio2" disabled><span class="txt">선택</span></label>
+					<p class="gap"></p>
+					<div class="ut-filt">
+						<div class="menu">
+							<label class="check"><input type="checkbox"><span class="txt">다중선택 필터1</span></label>
+							<label class="check"><input type="checkbox"><span class="txt">다중선택 필터2</span></label>
+							<label class="check"><input type="checkbox"><span class="txt">다중선택 필터3</span></label>
+						</div>
+					</div>
+
+
+					<div class="ut-filt">
+						<div class="menu">
+							<label class="check"><input type="radio" name="filt_1"><span class="txt">단일선택 필터1</span></label>
+							<label class="check"><input type="radio" name="filt_1"><span class="txt">단일선택 필터2</span></label>
+							<label class="check"><input type="radio" name="filt_1"><span class="txt">단일선택 필터3</span></label>
+						</div>
+					</div>
+
+					<p class="gap"></p>
+
+					<p class="gap"></p>
+					<label class="radio cr"><input type="radio" name="radio4"><span class="txt">라디오</span></label>
+					<label class="radio cr"><input type="radio" name="radio4"><span class="txt">라디오</span></label>
+					<label class="radio cd"><input type="radio" name="radio4"><span class="txt">라디오</span></label>
+					<label class="radio cd"><input type="radio" name="radio4"><span class="txt">라디오</span></label>
+					<p class="gap"></p>
+					<label class="radio cu">
+						<input type="radio" name="radion5" checked>
+						<span class="txt">
+							<span class="tt">도로명주소</span>
+							<div class="tox">ㅇㄴㄹㅇㄴㄹ</div>
+						</span>
+					</label>
+					<label class="radio cu">
+						<input type="radio" name="radion5">
+						<span class="txt">
+							<span class="tt">표준화지번주소</span>
+							<div class="tox"></div>
+						</span>
+					</label>
+					<p class="gap"></p>
+					<label class="checkbox cr"><input type="checkbox"><span class="txt">체크</span></label>
+					<label class="checkbox cr"><input type="checkbox"><span class="txt">체크</span></label>
+					<label class="checkbox cd"><input type="checkbox"><span class="txt">체크</span></label>
+					<label class="checkbox cd"><input type="checkbox"><span class="txt">체크</span></label>
+
+					<p class="gap"></p>
+					<label class="checkbox cv"><input type="radio" name="radio01">
+
+						<span class="txt">이교보
+							<div class="ut-tooltip">
+								<button type="button" class="ico help bt-tooltip">도움말</button>
+								<div class="toolctn">
+									<div class="tpmsg">
+										<p class="tt">기본부과형</p>
+										<p>3년이내 상환시 상환원금의 1.2%</p>
+										<p class="tt">일부면제형</p>
+										<p>대출일로부터 대출원금의 50%이내 상환시 중도상환수수료 면제(단, 금리가산 0.2%)</p>
+										<p>※ 중도상환액 X 중도상환수수료 X (중도상환수수료부과기준 잔여일 / 중도상환수수료 부과기간)</p>
+									</div>
+								</div>
+							</div>
+						</span>
+
+					</label>
+					<label class="checkbox cv"><input type="radio" name="radio01"><span class="txt">최교보</span></label>
+
+					<p class="gap"></p>
+
+					<!-- 체크 이미지 왼쪽에 있을때 추가 -->
+					<label class="checkbox ck"><input type="radio" name="radio01"><span class="txt">최교보</span></label>
+					<!--// 체크 이미지 왼쪽에 있을때 추가 -->
+
+					<p class="gap"></p>
+
+					<!-- 오른쪽 화살표 있을 시 버전 추가 -->
+					<div class="chk-arr-wrp">
+						<label class="checkbox ck"><input type="radio" name="radio01"><span class="txt">최교보 <span class="tinr">820312-1******</span></span></label>
+						<div class="bcharr"><button type="button" class="ck-arr">가입자 정보 보기</button></div>
+					</div>
+					<!--// 오른쪽 화살표 있을 시 버전 추가 -->
+
+					<!-- [D] 2022-01-16 주석 테스트 -->
+					<p class="gap"></p>
+					<label class="ut-chk"><input type="checkbox" checked><em></em></label>
+					<label class="ut-chk"><input type="checkbox" disabled><em></em></label>
+					<label class="ut-chk"><input type="checkbox" checked disabled><em></em></label>
+
+					<p class="gap"></p>
+					<div class="radioset a">
+						<div class="rdt">우편물 배달처 <em class="ast">는 필수항목입니다</em></div>
+						<div class="rdd">
+							<label class="radio"><input type="radio" name="radio_b2" checked><span class="txt">자택</span></label>
+							<label class="radio"><input type="radio" name="radio_b2"><span class="txt">직장</span></label>
+							<label class="radio"><input type="radio" name="radio_b2"><span class="txt">이메일</span></label>
+						</div>
+					</div>
+
+					<p class="gap"></p>
+					<div class="snippets">
+						<p>radiobox</p>
+					</div>
+
+					<div class="radiobox c">
+						<label class="radio"><input type="radio" name="radio_md" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_1" checked><span class="txt">남성</span></label>
+						<label class="radio"><input type="radio" name="radio_md" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_2"><span class="txt">여성</span></label>
+					</div>
+
+					<p class="gap"></p>
+					<div class="radiobox c col2">
+						<label class="radio"><input type="radio" name="radio_c2" checked><span class="txt">라디오</span></label>
+						<label class="radio"><input type="radio" name="radio_c2"><span class="txt">라디오</span></label>
+						<label class="radio"><input type="radio" name="radio_c2"><span class="txt">라디오</span></label>
+						<label class="radio"><input type="radio" name="radio_c2"><span class="txt">라디오</span></label>
+						<label class="radio"><input type="radio" name="radio_c2"><span class="txt">라디오</span></label>
+						<span class="radio"><span class="txt"></span></span>
+					</div>
+					<p class="gap"></p>
+					<div class="radiobox c col3">
+						<label class="radio"><input type="radio" name="radio_c3" checked><span class="txt">라디오</span></label>
+						<label class="radio"><input type="radio" name="radio_c3"><span class="txt">라디오</span></label>
+						<label class="radio"><input type="radio" name="radio_c3"><span class="txt">라디오</span></label>
+						<label class="radio"><input type="radio" name="radio_c3"><span class="txt">라디오</span></label>
+						<span class="radio"><span class="txt"></span></span>
+						<span class="radio"><span class="txt"></span></span>
+					</div>
+					<p class="gap"></p>
+					<div class="radiobox c col4">
+						<label class="radio"><input type="radio" name="radio_c4" checked><span class="txt">라디오</span></label>
+						<label class="radio"><input type="radio" name="radio_c4"><span class="txt">라디오</span></label>
+						<label class="radio"><input type="radio" name="radio_c4"><span class="txt">라디오</span></label>
+						<label class="radio"><input type="radio" name="radio_c4"><span class="txt">라디오</span></label>
+						<label class="radio"><input type="radio" name="radio_c4"><span class="txt">라디오</span></label>
+						<label class="radio"><input type="radio" name="radio_c4"><span class="txt">라디오</span></label>
+						<label class="radio"><input type="radio" name="radio_c4"><span class="txt">라디오</span></label>
+						<span class="radio"><span class="txt"></span></span>
+					</div>
+
+					<p class="gap"></p>
+					<div class="radiobox d">
+						<label class="radio"><input type="radio" name="radio_d2" checked><span class="txt">1만원</span></label>
+						<label class="radio"><input type="radio" name="radio_d2"><span class="txt">5만원</span></label>
+						<label class="radio"><input type="radio" name="radio_d2"><span class="txt">10만원</span></label>
+						<label class="radio"><input type="radio" name="radio_d2"><span class="txt">20만원</span></label>
+						<label class="radio"><input type="radio" name="radio_d2"><span class="txt">30만원</span></label>
+					</div>
+
+					<p class="gap"></p>
+					<div class="ut-price">
+						<div class="radiobox d">
+							<label class="radio"><input type="radio" name="radio_d3" checked><span class="txt">1만원</span></label>
+							<label class="radio"><input type="radio" name="radio_d3"><span class="txt">5만원</span></label>
+							<label class="radio"><input type="radio" name="radio_d3"><span class="txt">10만원</span></label>
+							<label class="radio"><input type="radio" name="radio_d3"><span class="txt">20만원</span></label>
+							<label class="radio"><input type="radio" name="radio_d3"><span class="txt">30만원</span></label>
+						</div>
+						<span class="input a">
+							<label class="lb" for="input_id0">대출 신청금액</label>
+							<input id="input_id0" type="text" placeholder="대출 신청금액 입력">
+						</span>
+					</div>
+
+
+
+
+
+
+				</section>
+
+				<section class="sect" data-sid="ui-datepickers">
+					<h3 class="hdt">날짜 선택</h3>
+					<div class="snippets">
+						<p>input_date </p>
+					</div>
+					<h4>일 선택</h4>
+					<span class="input a ut-date"><input type="tel" id="datepick_0" class="datepicker" placeholder="YYYY.MM.DD" value="2020.01.01" title="날짜입력" oninput="ui.format.init(this)"></span>
+					<p class="gap"></p>
+					<span class="input a ut-date"><label class="lb" for="datepick_1">Label1</label><input type="tel" id="datepick_1" class="datepicker" placeholder="YYYY.MM.DD" value="2020.01.01" oninput="ui.format.init(this)"></span>
+					<p class="gap"></p>
+					<span class="input a ut-date"><label class="lb" for="datepick_99">기간제한</label><input type="tel" placeholder="YYYY.MM.DD" class="datepicker" id="datepick_99" oninput="ui.format.init(this)"></span>
+					<script>
+						$(document).ready(function(){
+							$("#datepick_99").datepicker("destroy");	//  기본 datepicker 설정 뽀개기
+							ui.datepick.set({							//  datepciker 날짜선택기간 제한 두기
+								id:"datepick_99",
+								minDate: new Date('2020.01.09'),
+								maxDate: new Date('2022-02-20'),
+								onSelect :function(date){
+									console.log("datepick_99",date);
+								},
+							});
+						});
+					</script>
+
+					<p class="gap"></p>
+					<div class="ut-range">
+						<div class="rag">
+							<label class="radio"><input type="radio" name="r_range" checked><span class="txt">당일</span></label>
+							<label class="radio"><input type="radio" name="r_range"><span class="txt">1개월</span></label>
+							<label class="radio"><input type="radio" name="r_range"><span class="txt">3개월</span></label>
+							<label class="radio"><input type="radio" name="r_range"><span class="txt">6개월</span></label>
+							<label class="radio"><input type="radio" name="r_range"><span class="txt">1년</span></label>
+						</div>
+						<div class="rcs">
+							<span class="input a ut-date"><input type="tel" id="date_st_0" class="datepicker st" placeholder="YYYY.MM.DD" value="2020.01.01" title="시작날짜"></span>
+							<i class="ds">~</i>
+							<span class="input a ut-date"><input type="tel" id="date_ed_0" class="datepicker ed" placeholder="YYYY.MM.DD" value="2020.01.01" title="종료날짜"></span>
+						</div>
+					</div>
+
+					<h4>월 선택</h4>
+					<span class="input a ut-date"><input type="tel" id="month_0" class="monthpicker" placeholder="YYYY-MM" value="" title="월입력"  data-min="2022.02" data-max="2024.09" oninput="ui.format.init(this)"></span>
+					<p class="gap"></p>
+					<span class="input a ut-date">
+						<label class="lb" for="month_1">월입력</label>
+						<input type="tel" id="month_1" class="monthpicker" placeholder="YYYY.MM" value="2021.12" oninput="ui.format.init(this)">
+					</span>
+				</section>
+
+			</div>
+
+			<div class="uisect">
+
+				<section class="sect" data-sid="ui-loading">
+					<h3 class="hdt">로딩 - ui.loading</h3>
+					<div class="codebox">
+						<div class="code">
+							<div class="bts">
+								<a class="btn" href="javascript:;" onclick="ui.loading.show();">로딩열기</a>
+								<a class="btn btn-loading-close" href="javascript:;" onclick="ui.loading.hide()">로딩닫기</a>
+							</div>
+							<pre class="brush: js">
+								ui.loading.show(); // 로딩열기
+								ui.loading.hide(); // 로딩닫기 </pre>
+						</div>
+					</div>
+				</section>
+
+				<section class="sect" data-sid="ui-sliders" style="display: none;">
+					<h3 class="hdt">jQui슬라이더</h3>
+					<div class="ut-barslide a">
+						<input type="hidden" class="amt" value="1500000">
+						<input type="hidden" class="min" value="200000">
+						<input type="hidden" class="max" value="3000000">
+						<input type="hidden" class="step" value="10000">
+						<div class="barslide"></div>
+					</div>
+
+					<p class="gap"></p>
+					<div class="ut-barslide b">
+						<input type="hidden" class="amt0" value="1890000">
+						<input type="hidden" class="amt1" value="4000000">
+						<input type="hidden" class="min"  value="200000">
+						<input type="hidden" class="max"  value="5000000">
+						<input type="hidden" class="step" value="10000">
+						<div class="barslide"></div>
+					</div>
+
+
+				</section>
+
+				<section class="sect" data-sid="ui-tabs">
+					<h3 class="hdt">탭메뉴</h3>
+
+					<div class="ut-tabs a">
+						<ul class="menu">
+							<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">대탭메뉴1</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">대탭메뉴2</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">대탭메뉴3</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">대탭메뉴4</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_5" href="javascript:;">대탭메뉴5</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_6" href="javascript:;">대탭메뉴6</a></li>
+						</ul>
+					</div>
+
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">탭내용1</div>
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">탭내용2</div>
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_3">탭내용3</div>
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_4">탭내용4</div>
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_5">탭내용5</div>
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_6">탭내용6</div>
+
+					<p class="gap"></p>
+
+					<div class="ut-tabs b">
+						<ul class="menu">
+							<li class="active"><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_1" href="javascript:;">전체</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_2" href="javascript:;">메뉴2</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_3" href="javascript:;">메뉴3</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_4" href="javascript:;">메뉴4</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_5" href="javascript:;">메뉴5</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_6" href="javascript:;">메뉴6</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_7" href="javascript:;">메뉴7</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_8" href="javascript:;">메뉴8</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_9" href="javascript:;">메뉴9</a></li>
+						</ul>
+					</div>
+
+
+					<p class="gap"></p>
+
+					<div class="ut-tabs c">
+						<ul class="menu">
+							<li class="active"><a class="bt" data-ui-tab-btn="tab_c" aria-controls="tab_c_1" href="javascript:;">전체</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_c" aria-controls="tab_c_2" href="javascript:;">메뉴</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_c" aria-controls="tab_c_3" href="javascript:;">메뉴</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_c" aria-controls="tab_c_4" href="javascript:;">메뉴</a></li>
+						</ul>
+					</div>
+
+					<div class="ut-tabs c wt">
+						<ul class="menu">
+							<li class="active"><a class="bt" data-ui-tab-btn="tab_c_wt" aria-controls="tab_c_wt_1" href="javascript:;">전체</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_c_wt" aria-controls="tab_c_wt_2" href="javascript:;">메뉴</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_c_wt" aria-controls="tab_c_wt_3" href="javascript:;">메뉴</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_c_wt" aria-controls="tab_c_wt_4" href="javascript:;">메뉴</a></li>
+						</ul>
+					</div>
+
+					<div class="ut-tabs c lg">
+						<ul class="menu">
+							<li class="active"><a class="bt" data-ui-tab-btn="tab_cl" aria-controls="tab_cl_1" href="javascript:;">전체</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_cl" aria-controls="tab_cl_2" href="javascript:;">메뉴</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_cl" aria-controls="tab_cl_3" href="javascript:;">메뉴</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_cl" aria-controls="tab_cl_4" href="javascript:;">메뉴</a></li>
+						</ul>
+					</div>
+
+					<div class="ut-tabs c lg wide">
+						<ul class="menu">
+							<li class="active"><a class="bt" data-ui-tab-btn="tab_clwd" aria-controls="tab_clwd_1" href="javascript:;">메뉴</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_clwd" aria-controls="tab_clwd_2" href="javascript:;">메뉴</a></li>
+						</ul>
+					</div>
+
+					<div class="ut-tabs c lg wt">
+						<ul class="menu">
+							<li class="active"><a class="bt" data-ui-tab-btn="tab_cl_wt" aria-controls="tab_cl_wt_1" href="javascript:;">전체</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_cl_wt" aria-controls="tab_cl_wt_2" href="javascript:;">메뉴</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_cl_wt" aria-controls="tab_cl_wt_3" href="javascript:;">메뉴</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_cl_wt" aria-controls="tab_cl_wt_4" href="javascript:;">메뉴</a></li>
+						</ul>
+					</div>
+
+
+					<p class="gap"></p>
+					<div class="radiobox c">
+						<label class="radio"><input type="radio" name="radio_b" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_1" checked><span class="txt">선택</span></label>
+						<label class="radio"><input type="radio" name="radio_b" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_2"><span class="txt">선택</span></label>
+						<label class="radio"><input type="radio" name="radio_b" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_3"><span class="txt">선택</span></label>
+					</div>
+					<p class="gap"></p>
+					<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_1" class="active">탭내용1</div>
+					<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_2">탭내용2</div>
+					<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_3">탭내용2</div>
+
+					<p class="gap"></p>
+
+
+
+					<p class="gap"></p>
+					<label class="radio"><input type="radio" name="radio3" data-ui-tab-btn="tab_rc" aria-controls="tab_rc_1" checked><span class="txt">탭선택1</span></label>
+					<label class="radio"><input type="radio" name="radio3" data-ui-tab-btn="tab_rc" aria-controls="tab_rc_2"><span class="txt">탭선택2</span></label>
+
+					<div data-ui-tab-ctn="tab_rc" aria-labelledby="tab_rc_1" class="active">탭내용1</div>
+					<div data-ui-tab-ctn="tab_rc" aria-labelledby="tab_rc_2">탭내용2</div>
+
+					<div class="codebox">
+						<div class="code">
+							<pre class="brush: html">
+								<div class="ui-tabs a">
+									<ul class="menu">
+										<li class="active"><a class="bt" data-ui-tab-btn="tab_c" aria-controls="tab_c_1" href="javascript:;">탭메뉴1</a></li>
+										<li><a class="bt" data-ui-tab-btn="tab_c" aria-controls="tab_c_2" href="javascript:;">탭메뉴2</a></li>
+									</ul>
+								</div>
+								<div data-ui-tab-ctn="tab_c" aria-labelledby="tab_c_1" class="active">
+									탭내용1
+								</div>
+								<div data-ui-tab-ctn="tab_c" aria-labelledby="tab_c_2">
+									탭내용2
+								</div></pre>
+						</div>
+					</div>
+				</section>
+
+				<section class="sect" data-sid="ui-toggle-cls">
+					<h3 class="hdt">토글Class</h3>
+					<h4>버튼과 내용을 data-tog-cls="box" 로 감싸서 사용</h4>
+					<div class="snippets">
+						<p>tog 토글Class</p>
+					</div>
+					<div data-tog-cls="box">
+						<button data-tog-cls="btn" data-tog-val="open" class="btn" type="button">토글Class</button>
+						<div data-tog-cls="ctn">
+							<p>토글내용 토글내용</p>
+							<p>토글내용 토글내용</p>
+						</div>
+					</div>
+
+					<div class="codebox">
+						<div class="code">
+							<pre class="brush: html">
+								<div data-tog-cls="box">
+									<button data-tog-cls="btn" class="btn" type="button">토글Class</button>
+									<div data-tog-cls="ctn">
+										<p>토글내용 토글내용</p>
+										<p>토글내용 토글내용</p>
+									</div>
+								</div></pre>
+						</div>
+					</div>
+				</section>
+
+				<section class="sect" data-sid="ui-toggle">
+					<h3 class="hdt">토글UI</h3>
+					<h4>버튼과 내용이 머릴 떨어져 있을때 사용</h4>
+					<div class="snippets">
+						<p>tog toggle 토글UI</p>
+					</div>
+					<button type="button" data-ui-tog="btn" data-ui-tog-val="tog_sample1" class="btn">토글UI</button>
+					<div data-ui-tog="ctn" data-ui-tog-val="tog_sample1">
+						<p>토글내용 토글내용</p>
+						<p>토글내용 토글내용</p>
+					</div>
+					<div class="codebox">
+						<div class="code">
+							<pre class="brush: html">
+								<button type="button" data-ui-tog="btn" data-ui-tog-val="tog_sample1" class="btn">토글UI</button>
+								<div data-ui-tog="ctn" data-ui-tog-val="tog_sample1">
+									<p>토글내용 토글내용</p>
+									<p>토글내용 토글내용</p>
+								</div></pre>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="sect" data-sid="ui-accodion">
+					<h3 class="hdt">아코디언UI</h3>
+					<h4>.ut-accd.a</h4>
+					<div class="snippets">
+						<p>accd 아코디언<br>
+							<!-- [web Watch 진단결과] 아코디언 버튼의 대체텍스트가 '버튼열기', '버튼닫기' 로 동일하게 제공되어 부적절합니다.
+							각 버튼이 구분되는 대체텍스트를 제공해야하고 aria-expanded 속성으로 상태정보가
+							제공되었기 때문에 열기, 닫기 정보는 별도로 제공하지 않아도 무방합니다.-->
+						</p>
+					</div>
+					<!-- 아코디언형 -->
+					<ul class="ut-accd a" data-accd="accd">
+						<li class="open">
+							<div class="hbox"> 아코디언 UI Accd <button type="button" class="btn-tog">버튼</button></div>
+							<div class="cbox">내용 내용 내용 <br> 내용</div>
+						</li>
+						<li>
+							<div class="hbox"> 아코디언 UI Accd <button type="button" class="btn-tog">버튼</button></div>
+							<div class="cbox">내용 내용 내용 <br> 내용</div>
+						</li>
+						<!-- <li>
+							<div class="hbox"> 추가로 납입하신 금액 얼마 <button type="button" class="btn-tog">금액 선택/입력 영역</button></div>
+							<div class="cbox">내용 내용 내용 <br> 내용</div>
+						</li> -->
+						<li class="expt">
+							<div class="hbox"> 아코디언 UI Accd 제외</div>
+							<div class="cbox">내용 내용 내용 <br> 내용</div>
+						</li>
+					</ul>
+					<p class="gap"></p>
+					<!-- 토글형 -->
+					<ul class="ut-accd a" data-accd="tog">
+						<li class="open">
+							<div class="hbox"> 아코디언 UI Tog <button type="button" class="btn-tog">버튼</button></div>
+							<div class="cbox">내용 내용 내용 <br> 내용</div>
+						</li>
+						<li>
+							<div class="hbox"> 아코디언 UI Tog <button type="button" class="btn-tog">버튼</button></div>
+							<div class="cbox">내용 내용 내용 <br> 내용</div>
+						</li>
+						<li class="expt">
+							<div class="hbox"> 아코디언 UI Tog 제외</div>
+							<div class="cbox">내용 내용 내용 <br> 내용</div>
+						</li>
+					</ul>
+					<p class="gap"></p>
+
+					<!-- 토글형 파일등록  -->
+					<ul class="ut-accd addfile a" data-accd="tog">
+						<li>
+							<div class="hbox">
+								<div class="hdt"><span class="tit">거래은행 통장 사본<i class="n">(2)</i></span></div>
+								<div class="bts">
+									<label class="bt btn-reg btn-attach show" for="btn_001">
+										<em class="btx">등록하기</em>
+										<input class="file" type="file" accept="image/*; capture=camera" id="btn_001">
+									</label>
+									<button type="button" class="bt btn-tog">파일리스트</button>
+								</div>
+							</div>
+							<div class="cbox">
+								<div class="bts">
+									<label class="btn sm btn-attach" for="btn_002">
+										<em class="btx">추가하기</em>
+										<input class="file" type="file" accept="image/*; capture=camera" id="btn_002">
+									</label>
+								</div>
+								<ul class="ut-flist flist">
+									<li>
+										<div class="fset">
+											<button type="button" class="pic" title="IMG_48473.jpg">파일보기</button>
+											<div class="fnm">
+												<div class="fm">IMG_48473.jpg</div>
+												<div class="fs">223.12kb</div>
+											</div>
+											<div class="btd"><button type="button" class="btn-del" title="IMG_48473.jpg">사진삭제</button></div>
+										</div>
+									</li>
+									<li>
+										<div class="fset">
+											<button type="button" class="pic" title="IMG_48473.jpg">파일보기</button>
+											<div class="fnm">
+												<div class="fm">IMG_48473.jpg</div>
+												<div class="fs">223.12kb</div>
+											</div>
+											<div class="btd"><button type="button" class="btn-del" title="IMG_48473.jpg">사진삭제</button></div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="open">
+							<div class="hbox">
+								<div class="hdt"><span class="tit">거래은행 통장 사본<i class="n">(2)</i></span></div>
+								<div class="bts">
+									<label class="bt btn-reg btn-attach" for="btn_003">
+										<em class="btx">등록하기</em>
+										<input class="file" type="file" accept="image/*; capture=camera" id="btn_003">
+									</label>
+									<button class="bt btn-tog show" type="button">파일리스트</button>
+								</div>
+							</div>
+							<div class="cbox">
+								<div class="bts">
+									<label class="btn sm btn-attach" for="btn_004">
+										<em class="btx">추가하기</em>
+										<input class="file" type="file" accept="image/*; capture=camera" id="btn_004">
+									</label>
+								</div>
+								<ul class="ut-flist flist">
+									<li>
+										<div class="fset">
+											<button type="button" class="pic" title="IMG_48473.jpg">파일보기</button>
+											<div class="fnm">
+												<div class="fm">IMG_48473.jpg</div>
+												<div class="fs">223.12kb</div>
+											</div>
+											<div class="btd"><button type="button" class="btn-del" title="IMG_48473.jpg">사진삭제</button></div>
+										</div>
+									</li>
+									<li>
+										<div class="fset">
+											<button type="button" class="pic" title="IMG_48473.jpg">파일보기</button>
+											<div class="fnm">
+												<div class="fm">IMG_48473.jpg</div>
+												<div class="fs">223.12kb</div>
+											</div>
+											<div class="btd"><button type="button" class="btn-del" title="IMG_48473.jpg">사진삭제</button></div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+
+
+					<p class="gap"></p>
+					<h4>.ut-accd.b</h4>
+
+					<button type="button" data-accd="btn" data-accd-id="accd_123" class="link-text"><i class="btxt op">전체펼침</i><i class="btxt cl">전체닫기</i></button>
+					<ul class="ut-accd b" data-accd="tog" data-accd-id="accd_123">
+						<li class="open">
+							<div class="hbox">보험금 지급조사 요청에 대한 동의<button type="button" class="btn-tog">버튼</button></div>
+							<div class="cbox">내용 내용 내용 <br> 내용</div>
+						</li>
+						<li>
+							<div class="hbox">보험금 지급조사 요청에 대한 동의<button type="button" class="btn-tog">버튼</button></div>
+							<div class="cbox">내용 내용 내용 <br> 내용</div>
+						</li>
+					</ul>
+
+
+					<div class="codebox">
+						<div class="code">
+							<pre class="brush: html">
+								<ul class="ut-accd" data-accd="accd">
+									<li class="open">
+										<div class="hbox">타이틀 <button type="button" class="btn-tog">버튼</button></div>
+										<div class="cbox">내용</div>
+									</li>
+									<li>
+										<div class="hbox">타이틀 <button type="button" class="btn-tog">버튼</button></div>
+										<div class="cbox">내용</div>
+									</li>
+									<li class="expt">
+										<div class="hbox">타이틀 <button type="button" class="btn-tog">버튼</button></div>
+										<div class="cbox">내용</div>
+									</li>
+								</ul></pre>
+						</div>
+					</div>
+
+					<p class="gap"></p>
+					<h4>ut-accd b num</h4>
+
+					<ol class="ut-accd b num" data-accd="accd">
+						<li>
+							<div class="hbox">
+								<p class="t">금융회사가 금융상품을 판매할 경우, 판매 원칙을 준수하여야 합니다.</p>
+								<button type="button" class="btn-tog">버튼</button>
+							</div>
+							<div class="cbox">
+								<ul class="bullet a">
+									<li>소비자의 정보(재산상황, 거래목적 등)를 확인하여 적합(적정)한 상품을 권유해야 하며, 보험료 &middot; 보험금이나 위험보장의 범위, 수익 변동 가능성 등 상품의 중요사항을 금융소비자에게 설명해야 합니다.</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="hbox">
+								<p class="t">금융회사가 금융상품을 판매할 경우, 판매 원칙을 준수하여야 합니다.</p>
+								<button type="button" class="btn-tog">버튼</button>
+							</div>
+							<div class="cbox">
+								<ul class="bullet a">
+									<li>소비자의 정보(재산상황, 거래목적 등)를 확인하여 적합(적정)한 상품을 권유해야 하며, 보험료 &middot; 보험금이나 위험보장의 범위, 수익 변동 가능성 등 상품의 중요사항을 금융소비자에게 설명해야 합니다.</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="hbox">
+								<p class="t">금융회사가 금융상품을 판매할 경우, 판매 원칙을 준수하여야 합니다.</p>
+								<button type="button" class="btn-tog">버튼</button>
+							</div>
+							<div class="cbox">
+								<ul class="bullet a">
+									<li>소비자의 정보(재산상황, 거래목적 등)를 확인하여 적합(적정)한 상품을 권유해야 하며, 보험료 &middot; 보험금이나 위험보장의 범위, 수익 변동 가능성 등 상품의 중요사항을 금융소비자에게 설명해야 합니다.</li>
+								</ul>
+							</div>
+						</li>
+					</ol><!-- //ut-accd -->
+
+				</section>
+
+
+				<section class="sect" data-sid="ui-swipers">
+					<h3 class="hdt">슬라이드 Swiper</h3>
+
+					<div class="snippets">
+						<p>swiper slide 슬라이드</p>
+					</div>
+					<div class="ut-slide-dot">
+						<div class="swiper-container swiper" data-slide-id="photo_1">
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/1.jpg" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/2.jpg" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/3.jpg" alt="이미지"></a></div>
+								</li>
+							</ul>
+							<div class="navigation"><button type="button" class="nav prev">이전</button><button type="button" class="nav next">다음</button></div>
+							<div class="pagination"></div>
+						</div>
+					</div>
+
+					<p class="gap"></p>
+					<div class="ut-slide-num">
+						<div class="swiper-container swiper" data-slide-id="photo_2">
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/4.jpg" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/5.jpg" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/6.jpg" alt="이미지"></a></div>
+								</li>
+							</ul>
+							<div class="navigation"><button type="button" class="nav prev">이전</button><button type="button" class="nav next">다음</button></div>
+							<div class="pagination"></div>
+						</div>
+					</div>
+
+					<p class="gap"></p>
+
+
+					<div class="ut-slide-play">
+						<div class="swiper-container swiper" data-slide-id="banner_1">
+							<div class="control">
+								<div class="dots"></div>
+								<div class="plys"><button type="button" class="bt play">정지</button></div>
+							</div>
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="배너"></a></li>
+							</ul>
+						</div>
+					</div>
+					<p class="gap"></p>
+
+
+					<div class="ut-slide-play">
+						<div class="swiper-container swiper" data-slide-id="banner_2">
+							<div class="control">
+								<div class="dots"></div>
+								<div class="plys"><button type="button" class="bt play">정지</button></div>
+							</div>
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="배너"></a></li>
+								<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="배너"></a></li>
+								<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="배너"></a></li>
+								<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="배너"></a></li>
+								<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="배너"></a></li>
+							</ul>
+						</div>
+					</div>
+
+
+					<script>
+					$(document).ready(function(){
+						// http://idangero.us/swiper/api/
+						// ui.slides.sample1.slide.on('slideChange', function () {
+						// 	console.log('cmRecom slideChange');
+						// });
+					});
+					</script>
+				</section>
+
+
+
+			</div>
+		</div>
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg b" onclick="popsample_A();">이전</button>
+					<button type="button" class="btn rd lg a" onclick="popsample_C();" id="btn-001">다음</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<!-- 팝레이어 A 전체 덮는 크기 -->
+	<article class="pop-layer a pop-sample1 abcd" id="pop-sample1">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">타이틀111</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<p>sdfsdfsfsd</p>
+					<p>sdfsdfsfsd</p>
+					<p>sdfsdfsfsd</p>
+					<p>sdfsdfsfsd</p>
+					<p>sdfsdfsfsd</p>
+					<p>sdfsdfsfsd</p>
+					<p>sdfsdfsfsd</p>
+					<div class="ut-topfix">
+						<div class="inr">
+							<div class="ut-steps d">
+								<div class="tit">2.정보입력</div>
+								<div class="box">
+									<div class="gage">
+										<span class="bar"></span>
+									</div>
+									<div class="nums">
+										<span class="tot"><b class="b">6</b></span>
+										<span class="num"><b class="b">4</b></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p>sdfsdfsfsd</p>
+					<button type="button" class="btn" onclick="popsample_B();">팝레이어2</button>
+					<p>sdfsdfsfsd</p>
+					<button type="button" class="btn" onclick="popsample_A_close();">팝레이어 닫기콜백2</button>
+					<p>sdfsdfsfsd</p>
+					<span class="select a">
+						<label class="lb" for="select-5">Label</label>
+						<select id="select-5">
+							<option>선택1</option>
+							<option>선택2</option>
+							<option>선택3</option>
+							<option>선택4</option>
+							<option>선택5</option>
+						</select>
+					</span>
+					<p>sdfsdfsfsd</p>
+					<button type="button" class="btn" onclick="ui.popup.open('pop-sample3');">팝레이어3</button>
+					<p>sdfsdfsfsd</p>
+					<label class="checkbox"><input type="checkbox"><span class="txt">첵크박스</span></label>
+					<p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p>
+					<span class="input a"><label class="lb" for="input-20">타이틀</label><input type="text" placeholder="내용을 입력하세요." id="input-20"></span>
+					<p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p>
+					<p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p>
+					<p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p> <p>sdfsdfsfsd</p>
+					<span class="input a"><label class="lb" for="input-21">타이틀</label><input type="text" placeholder="내용을 입력하세요." id="input-21"></span>
+					<p>sdfsdfsfsd</p>
+					<button data-ui-fsize="btn" data-ui-fsize-id="fsid_01" type="button" class="btn-fsize"><i class="blind">글자크기 조정하기</i></button>
+					<div data-ui-fsize="ctn" data-ui-fsize-id="fsid_01">
+						<p>보험계약자나 보험금을 받을 사람이 보험금 책정에 영향을 줄 수 있는 중요 사실을 보험회사에 미리 알려야 한다는 의무</p>
+						<div>보험계약자나 보험금을 받을 사람이 보험금 책정에 영향을 줄 수 있는 중요 사실을 보험회사에 미리 알려야 한다는 의무</div>
+					</div>
+					<p>sdfsdfsfsd</p>
+					<label class="checkbox"><input type="checkbox"><span class="txt"></span></label>
+					<label class="radio"><input type="radio"><span class="txt"></span></label>
+					<p>sdfsdfsfsd</p>
+					<p>sdfsdfsfsd</p>
+					<span class="select a">
+						<label class="lb" for="select-6">Label</label>
+						<select id="select-6">
+							<option>선택1</option>
+							<option>선택2</option>
+							<option>선택3</option>
+							<option>선택4</option>
+							<option>선택5</option>
+						</select>
+					</span>
+					<p>sdfsdfsfsd</p>
+					<p>sdfsdfsfsd</p>
+					<p>sdfsdfsfsd</p>
+					<span class="input a"><label class="lb" for="input-22">타이틀</label><input type="text" placeholder="내용을 입력하세요." id="input-22"></span>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-sample1');">취소</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+
+	<!-- 팝레이어 B 가운데 뜨는 크기 -->
+	<article class="pop-layer b pop-sample2" id="pop-sample2">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">타이틀222</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<p>sdfsdfsfsd</p>
+					<label class="radio"><input type="radio" name="slfdahkj"><span class="txt">첵크박스</span></label>
+					<label class="radio"><input type="radio" name="slfdahkj"><span class="txt">첵크박스</span></label>
+					<p>sdfsdfsfsd</p>
+					<span class="input a ut-date"><label class="lb" for="date_id_">Label</label><input type="tel" id="date_id_" class="datepicker" placeholder="YYYY.MM.DD" value="2020.01.01"></span>
+					<p>sdfsdfsfsd</p>
+					<button type="button" class="btn" onclick="ui.popup.open('pop-sample3');">팝레이어3</button>
+					<p>sdfsdfsfsd</p>
+					<label class="input a"><input type="text"></label>
+					<p>sdfsdfsfsd</p>
+					<label class="textarea a"><textarea></textarea></label>
+					<p>sdfsdfsfsd</p>
+					<p>sdfsdfsfsd</p>
+					<p>sdfsdfsfsd</p>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn b" onclick="ui.popup.close('pop-sample2');">닫기</button>
+					<button type="button" class="btn a">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+
+	<!-- 팝레이어 C  아래에서 올라오는 -->
+	<article class="pop-layer c pop-sample3" id="pop-sample3">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">하단팝업</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<p>sdfdsfds</p>
+					<p>sdfdsfds</p>
+					<p>sdfdsfds</p>
+					<p>sdfdsfds</p>
+					<p>sdfdsfds</p>
+					<p>sdfdsfds</p>
+					<p>sdfdsfds</p>
+					<p>sdfdsfds</p>
+					<p>sdfdsfds</p>
+					<div class="btn-set btn-bot b2">
+						<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-sample3');">취소</button>
+						<button type="button" class="btn a rd lg">다음</button>
+					</div>
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<!-- 팝레이어 D 가운데 뜨는 크기 : 이벤트/공지 -->
+	<article class="pop-layer d pop-sample4" id="pop-sample4">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">이벤트 레이어팝업</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="imgBox"><img src="../../img/temp/banner_1.png" alt=""></div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="bot-btn">
+					<label class="checkbox"><input type="checkbox"><span class="txt">오늘은 그만 보기</span></label>
+					<button type="button" class="bt close" onclick="ui.popup.close('pop-sample4');">닫기</button>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<!-- 팝레이어 D 가운데 뜨는 크기 : 이벤트/공지 -->
+	<article class="pop-layer d pop-sample5" id="pop-sample5">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">공지 레이어팝업</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="noti-head">
+						<h2 class="ptit">공지 타이틀</h2>
+					</div>
+					<div class="noti-cont">공지 추가시 스타일 변경(현재는 pc와 동일 스타일)</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="bot-btn">
+					<label class="checkbox"><input type="checkbox"><span class="txt">다시 보지 않기</span></label>
+					<button type="button" class="bt close" onclick="ui.popup.close('pop-sample5');">닫기</button>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<script>
+		$(document).ready(function(){
+
+		});
+	</script>
+
+	<em class="keystat"></em>
+
+	<!--// 컨텐츠 끝 -->
+
+
+	<script>
+	$(document).ready(function(){
+
+	});
+	</script>
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<!-- [D] 2022-06-08 퀵메뉴 추가/챗봇 사용안함 -->
+	<!-- <include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true","class":"is-chatbot"}'></include> -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true","class":"is-qmenu"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+
+<script>
+var html = document.documentElement;
+function showInfo() {
+	$("#cssStatus").html(html.className);
+	var vinfo =
+		'<i>Client Size : ' + ui.viewport.width() + ' x ' + ui.viewport.height() + '</i>' +
+		'<i>docHeight   : ' + ui.viewport.docHeight() + '</i>' +
+		'<i>scrollTop   : ' + ui.viewport.scrollTop() + '</i>' +
+		'<i>Orientation : ' + window.orientation + '</i>' ;
+	$("#browserStatus").html( vinfo );
+	// $('#iosSafe').html( "iosXSafeArea "+JSON.stringify( ui.getSafe ) );
+}
+$(document).ready(function(){
+	$("#userAgent").html(navigator.userAgent);
+	showInfo();
+	$(document.body).on("orientationchange", showInfo);
+	$(window).on("orientationchange", showInfo);
+	$(window).on("load resize scroll", showInfo);
+});
+</script>
+</body>
+</html>
