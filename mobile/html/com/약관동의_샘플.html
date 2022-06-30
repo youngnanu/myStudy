@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-sch,is-gnb","title":"약관동의 샘플"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page " id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			
+			<!-- 토글 삭제 <div class="ut-terms a tog" data-tog-cls="box">
+				<div class="ckall">
+					<label class="checkbox cr"><input type="checkbox"><span class="txt">전체 동의</span></label>
+					<button type="button" data-tog-cls="btn" class="bt-tog">전체동의</button>
+				</div>
+
+				<div class="plbox" data-tog-cls="ctn">
+					<ul class="plist">
+						<li>
+							<label class="checkbox cr"><input type="checkbox"><span class="txt">개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+						<li>
+							<label class="checkbox cr"><input type="checkbox"><span class="txt">개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+					</ul>
+				</div>
+			</div> -->
+			<!-- <div class="tops"><div class="tit">보험금 청구를 위한 필수 동의서</div></div> -->
+
+			<h2 class="hd-tit3 mt40">기본</h2>
+
+			<div class="ut-terms a">
+
+				<!-- 전체 동의 -->
+				<div class="ckall">
+					<label class="checkbox cr"><input type="checkbox"><span class="txt">전체 동의</span></label>
+					<a href="javascript:;" class="plink" role="button">보기</a>
+				</div>
+				
+				<!-- 상위 레이블 앞에 선택옵션, 버튼 x -->
+				<div class="plbox">
+					<div class="hdt">
+						<div class="tit">
+							<label class="checkbox cr"><input type="checkbox"><span class="txt">수집·이용에 관한 사항</span></label>
+						</div>
+					</div>
+					<ul class="plist">
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 민감정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[선택] 개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- 상위 레이블 없고 각각 확인 -->
+				<div class="plbox">
+					<ul class="plist">
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 민감정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[선택] 개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="plbox">
+					
+					<ul class="plist">
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+						
+					</ul>
+				</div>
+
+				<div class="plset">
+					<ul class="plist">
+						<li>
+							<label class="checkbox"><input type="checkbox"><span class="txt">전체 </span></label>
+						</li>
+						<li>
+							<label class="checkbox"><input type="checkbox"><span class="txt">전화(ARS)</span></label>
+						</li>
+						<li>
+							<label class="checkbox"><input type="checkbox"><span class="txt">문자메세지</span></label>
+						</li>
+						<li>
+							<label class="checkbox"><input type="checkbox"><span class="txt">이메일</span></label>
+						</li>
+						<li>
+							<label class="checkbox"><input type="checkbox"><span class="txt">우편</span></label>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<h2 class="hd-tit3 mt40">콘텐츠 내 단독 사용</h2>
+
+			<div class="ut-terms a">
+
+				<div class="plbox">
+					<ul class="plist">
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="ut-terms a">
+
+				<div class="plbox">
+					<ul class="plist">
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<h2 class="hd-tit3 mt40">약관 두 개 이상</h2>
+
+			<div class="ut-terms a">
+
+				<div class="plbox">
+					<ul class="plist">
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="ut-terms a">
+
+				<div class="plbox">
+					
+					<ul class="plist">
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="plbox">
+					<ul class="plist">
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+
+		</div>
+		<br><br><br><br><br><br><br><br>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set ">
+					<button type="button" class="btn rd lg b">동의안함</button>
+					<button type="button" class="btn rd lg a">동의</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>
