@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+<style>
+	.header .inr{position: relative;}
+	/* .header:not(:first-child) .gnb .menu>li>div{display: none;} */
+	.header .gnb .menu>li>div{display: none !important;}
+	.guide-h2{font-size: 22rem;font-weight:bold;width: 1135rem;margin: 0 auto;display: block;}
+	.guide-h3{font-size: 16rem;font-weight:bold;width: 1135rem;margin: 0 auto;display: block;}
+</style>
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<h2 class="guide-h2"><br>GNB type 확인용</h2>
+	<h3 class="guide-h3"><br>개인/Default</h3>
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+
+	<div class="mt20"><br><br></div>
+	<h3 class="guide-h3"><br>"nav":"false" => nav.location이 없는 경우</h3>
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true","nav":"false"}'></include>
+
+	<!-- <div class="mt20"><br><br></div>
+	<h3 class="guide-h3"><br>"part":"corp" => 기업 확인용 옵션,실제 사용할 필요 없음</h3>
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true","part":"corp"}'></include> -->
+	<div class="mt20"><br><br></div>
+	<h3 class="guide-h3"><br>기업 : 로그인</h3>
+	<include class="header" src="../inc/header_etp.html" data-include-opt='{"visible":"true","login":"true"}'></include>
+
+	<div class="mt20"><br><br></div>
+	<h3 class="guide-h3"><br>기업 : 로그아웃</h3>
+	<include class="header" src="../inc/header_etp.html" data-include-opt='{"visible":"true","login":"false"}'></include>
+
+	<div class="mt20"><br><br></div>
+	<h3 class="guide-h3"><br>
+		header_abt.html => 회사소개</h3>
+	<include class="header" src="../inc/header_abt.html" data-include-opt='{"visible":"true"}'></include>
+
+	<div class="mt20"><br><br></div>
+	<h3 class="guide-h3"><br>
+		header_chp.html => 협력병원</h3>
+	<div class="chp">
+		<include class="header" src="../inc/header_chp.html" data-include-opt='{"visible":"true"}'></include>
+	</div>
+	
+
+
+	<!-- <include class="header" src="../inc/header_chp.html" data-include-opt='{"visible":"true"}'></include> -->
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<main class="container page is-full" id="container">
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>
